@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  TrainCrossing_Car_fmiGetTypesPlatform @1
+  TrainCrossing_Car_fmiGetVersion @2
+  TrainCrossing_Car_fmiSetDebugLogging @3
+  TrainCrossing_Car_fmiInstantiate @4
+  TrainCrossing_Car_fmiFreeInstance @5
+  TrainCrossing_Car_fmiSetupExperiment @6
+  TrainCrossing_Car_fmiEnterInitializationMode @7
+  TrainCrossing_Car_fmiExitInitializationMode @8
+  TrainCrossing_Car_fmiTerminate @9
+  TrainCrossing_Car_fmiReset @10
+  TrainCrossing_Car_fmiGetReal @11
+  TrainCrossing_Car_fmiGetInteger @12
+  TrainCrossing_Car_fmiGetBoolean @13
+  TrainCrossing_Car_fmiGetString @14
+  TrainCrossing_Car_fmiSetReal @15
+  TrainCrossing_Car_fmiSetInteger @16
+  TrainCrossing_Car_fmiSetBoolean @17
+  TrainCrossing_Car_fmiSetString @18
+  TrainCrossing_Car_fmiGetFMUstate @19
+  TrainCrossing_Car_fmiSetFMUstate @20
+  TrainCrossing_Car_fmiFreeFMUstate @21
+  TrainCrossing_Car_fmiSerializedFMUstateSize @22
+  TrainCrossing_Car_fmiSerializeFMUstate @23
+  TrainCrossing_Car_fmiDeSerializeFMUstate @24
+  TrainCrossing_Car_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  TrainCrossing_Car_fmiEnterEventMode @26
+  TrainCrossing_Car_fmiNewDiscreteStates @27
+  TrainCrossing_Car_fmiEnterContinuousTimeMode @28
+  TrainCrossing_Car_fmiCompletedIntegratorStep @29
+  TrainCrossing_Car_fmiSetTime @30
+  TrainCrossing_Car_fmiSetContinuousStates @31
+  TrainCrossing_Car_fmiGetDerivatives @32
+  TrainCrossing_Car_fmiGetEventIndicators @33
+  TrainCrossing_Car_fmiGetContinuousStates @34
+  TrainCrossing_Car_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  TrainCrossing_Car_fmiSetRealInputDerivatives @36
+  TrainCrossing_Car_fmiGetRealOutputDerivatives @37
+  TrainCrossing_Car_fmiDoStep @38
+  TrainCrossing_Car_fmiCancelStep @39
+  TrainCrossing_Car_fmiGetStatus @40
+  TrainCrossing_Car_fmiGetRealStatus @41
+  TrainCrossing_Car_fmiGetIntegerStatus @42
+  TrainCrossing_Car_fmiGetBooleanStatus @43
+  TrainCrossing_Car_fmiGetStringStatus @44

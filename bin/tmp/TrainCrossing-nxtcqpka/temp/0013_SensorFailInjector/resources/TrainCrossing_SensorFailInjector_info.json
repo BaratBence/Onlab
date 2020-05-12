@@ -1,0 +1,18 @@
+{"format":"Transformational debugger info","version":1,
+"info":{"name":"TrainCrossing.SensorFailInjector","description":""},
+"variables":{
+"$outputAlias_Sensorfail":{"comment":"","kind":"discrete","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":286,"lineEnd":286,"colStart":5,"colEnd":69}}},
+"Sensorfail":{"comment":"","kind":"variable","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":286,"lineEnd":286,"colStart":5,"colEnd":69}}}
+},
+"equations":[{"eqIndex":0,"tag":"dummy"},
+{"eqIndex":1,"section":"initial","tag":"assign","defines":["$PRE.$outputAlias_Sensorfail"],"uses":["$START.$outputAlias_Sensorfail"],"equation":["$START.$outputAlias_Sensorfail"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":2,"section":"initial","tag":"assign","defines":["$outputAlias_Sensorfail"],"uses":["$PRE.$outputAlias_Sensorfail"],"equation":["$PRE.$outputAlias_Sensorfail"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":3,"tag":"alias","equation":[7],"section":"initial"},
+{"eqIndex":4,"tag":"alias","equation":[5],"section":"initial"},
+{"eqIndex":5,"section":"regular","tag":"assign","defines":["$whenCondition1"],"uses":["time"],"equation":["time >= 30.0"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":288,"lineEnd":288,"colStart":23,"colEnd":38}}},
+{"eqIndex":6,"section":"regular","tag":"when","defines":["$outputAlias_Sensorfail"],"uses":["$whenCondition1"],"equation":["true"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":288,"lineEnd":288,"colStart":23,"colEnd":38}}},
+{"eqIndex":7,"section":"regular","tag":"assign","defines":["Sensorfail"],"uses":["$outputAlias_Sensorfail"],"equation":["$outputAlias_Sensorfail"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}}
+],
+"functions":[
+]
+}

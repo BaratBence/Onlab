@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  TrainCrossing_TrainLight_fmiGetTypesPlatform @1
+  TrainCrossing_TrainLight_fmiGetVersion @2
+  TrainCrossing_TrainLight_fmiSetDebugLogging @3
+  TrainCrossing_TrainLight_fmiInstantiate @4
+  TrainCrossing_TrainLight_fmiFreeInstance @5
+  TrainCrossing_TrainLight_fmiSetupExperiment @6
+  TrainCrossing_TrainLight_fmiEnterInitializationMode @7
+  TrainCrossing_TrainLight_fmiExitInitializationMode @8
+  TrainCrossing_TrainLight_fmiTerminate @9
+  TrainCrossing_TrainLight_fmiReset @10
+  TrainCrossing_TrainLight_fmiGetReal @11
+  TrainCrossing_TrainLight_fmiGetInteger @12
+  TrainCrossing_TrainLight_fmiGetBoolean @13
+  TrainCrossing_TrainLight_fmiGetString @14
+  TrainCrossing_TrainLight_fmiSetReal @15
+  TrainCrossing_TrainLight_fmiSetInteger @16
+  TrainCrossing_TrainLight_fmiSetBoolean @17
+  TrainCrossing_TrainLight_fmiSetString @18
+  TrainCrossing_TrainLight_fmiGetFMUstate @19
+  TrainCrossing_TrainLight_fmiSetFMUstate @20
+  TrainCrossing_TrainLight_fmiFreeFMUstate @21
+  TrainCrossing_TrainLight_fmiSerializedFMUstateSize @22
+  TrainCrossing_TrainLight_fmiSerializeFMUstate @23
+  TrainCrossing_TrainLight_fmiDeSerializeFMUstate @24
+  TrainCrossing_TrainLight_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  TrainCrossing_TrainLight_fmiEnterEventMode @26
+  TrainCrossing_TrainLight_fmiNewDiscreteStates @27
+  TrainCrossing_TrainLight_fmiEnterContinuousTimeMode @28
+  TrainCrossing_TrainLight_fmiCompletedIntegratorStep @29
+  TrainCrossing_TrainLight_fmiSetTime @30
+  TrainCrossing_TrainLight_fmiSetContinuousStates @31
+  TrainCrossing_TrainLight_fmiGetDerivatives @32
+  TrainCrossing_TrainLight_fmiGetEventIndicators @33
+  TrainCrossing_TrainLight_fmiGetContinuousStates @34
+  TrainCrossing_TrainLight_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  TrainCrossing_TrainLight_fmiSetRealInputDerivatives @36
+  TrainCrossing_TrainLight_fmiGetRealOutputDerivatives @37
+  TrainCrossing_TrainLight_fmiDoStep @38
+  TrainCrossing_TrainLight_fmiCancelStep @39
+  TrainCrossing_TrainLight_fmiGetStatus @40
+  TrainCrossing_TrainLight_fmiGetRealStatus @41
+  TrainCrossing_TrainLight_fmiGetIntegerStatus @42
+  TrainCrossing_TrainLight_fmiGetBooleanStatus @43
+  TrainCrossing_TrainLight_fmiGetStringStatus @44

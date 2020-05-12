@@ -1,0 +1,1951 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+
+<!-- description of the model interface using an extention of the FMI standard -->
+<fmiModelDescription
+  fmiVersion                          = "1.0"
+
+  modelName                           = "TrainCrossing.TrainLight"
+  modelIdentifier                     = "TrainCrossing_TrainLight"
+
+  OPENMODELICAHOME                    = "E:/Modelica/"
+
+  guid                                = "{592a01e7-3fc8-44c1-8396-76c969ee0a48}"
+
+  description                         = ""
+  generationTool                      = "OpenModelica Compiler OpenModelica v1.15.0-dev-22-g5aea5c3aa6 (64-bit)"
+  generationDateAndTime               = "2020-03-15T16:47:24Z"
+
+  variableNamingConvention            = "structured"
+
+  numberOfEventIndicators             = "6"  cmt_numberOfEventIndicators             = "NG:       number of zero crossings,                           FMI"
+  numberOfTimeEvents                  = "0"  cmt_numberOfTimeEvents                  = "NG_SAM:   number of zero crossings that are samples,          OMC"
+
+  numberOfInputVariables              = "3"  cmt_numberOfInputVariables              = "NI:       number of inputvar on topmodel,                     OMC"
+  numberOfOutputVariables             = "5"  cmt_numberOfOutputVariables             = "NO:       number of outputvar on topmodel,                    OMC"
+
+  numberOfExternalObjects             = "0"  cmt_numberOfExternalObjects             = "NEXT:     number of external objects,                         OMC"
+  numberOfFunctions                   = "1"  cmt_numberOfFunctions                   = "NFUNC:    number of functions used by the simulation,         OMC"
+
+  numberOfContinuousStates            = "2"  cmt_numberOfContinuousStates            = "NX:       number of states,                                   FMI"
+  numberOfRealAlgebraicVariables      = "26"  cmt_numberOfRealAlgebraicVariables      = "NY:       number of real variables,                           OMC"
+  numberOfRealAlgebraicAliasVariables = "5"  cmt_numberOfRealAlgebraicAliasVariables = "NA:       number of alias variables,                          OMC"
+  numberOfRealParameters              = "8"  cmt_numberOfRealParameters              = "NP:       number of parameters,                               OMC"
+
+  numberOfIntegerAlgebraicVariables   = "3"  cmt_numberOfIntegerAlgebraicVariables   = "NYINT:    number of alg. int variables,                       OMC"
+  numberOfIntegerAliasVariables       = "0"  cmt_numberOfIntegerAliasVariables       = "NAINT:    number of alias int variables,                      OMC"
+  numberOfIntegerParameters           = "6"  cmt_numberOfIntegerParameters           = "NPINT:    number of int parameters,                           OMC"
+
+  numberOfStringAlgebraicVariables    = "0"  cmt_numberOfStringAlgebraicVariables    = "NYSTR:    number of alg. string variables,                    OMC"
+  numberOfStringAliasVariables        = "0"  cmt_numberOfStringAliasVariables        = "NASTR:    number of alias string variables,                   OMC"
+  numberOfStringParameters            = "0"  cmt_numberOfStringParameters            = "NPSTR:    number of string parameters,                        OMC"
+
+  numberOfBooleanAlgebraicVariables   = "40"  cmt_numberOfBooleanAlgebraicVariables   = "NYBOOL:   number of alg. bool variables,                      OMC"
+  numberOfBooleanAliasVariables       = "63"  cmt_numberOfBooleanAliasVariables       = "NABOOL:   number of alias bool variables,                     OMC"
+  numberOfBooleanParameters           = "5"  cmt_numberOfBooleanParameters           = "NPBOOL:   number of bool parameters,                          OMC" >
+
+
+  <!-- startTime, stopTime, tolerance are FMI specific, all others are OMC specific -->
+  <DefaultExperiment
+    startTime      = "0"
+    stopTime       = "20"
+    stepSize       = "0.04"
+    tolerance      = "1e-006"
+    solver        = "dassl"
+    outputFormat      = "mat"
+    variableFilter      = ".*" />
+
+  <!-- variables in the model -->
+  <ModelVariables>
+
+  <ScalarVariable
+    name = "Gate_Angle"
+    valueReference = "1000"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "0" classType = "rSta"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "105" startColumn = "5" endLine = "105" endColumn = "30" fileWritable = "true">
+    <Real start="90.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Gate_Rotation"
+    valueReference = "1001"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "1" classType = "rSta"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "106" startColumn = "5" endLine = "106" endColumn = "32" fileWritable = "true">
+    <Real start="0.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "der(Gate_Angle)"
+    valueReference = "1002"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "rDer"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "105" startColumn = "5" endLine = "105" endColumn = "30" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "der(Gate_Rotation)"
+    valueReference = "1003"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "rDer"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "106" startColumn = "5" endLine = "106" endColumn = "32" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Gate_Angle_output"
+    valueReference = "1004"
+    variability = "continuous" isDiscrete = "false"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "77" startColumn = "5" endLine = "77" endColumn = "60" fileWritable = "true">
+    <Real start="90.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference = "1005"
+    description = "Number of active steps in the CompositeStep"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1911" startColumn = "5" endLine = "1911" endColumn = "72" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.t"
+    valueReference = "1006"
+    description = "= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2025" startColumn = "5" endLine = "2026" endColumn = "73" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.t_dummy"
+    valueReference = "1007"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "3" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2039" startColumn = "5" endLine = "2039" endColumn = "17" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.t_start"
+    valueReference = "1008"
+    description = "Time instant at which the transition would fire, if waitTime would be zero"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "4" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2037" startColumn = "5" endLine = "2038" endColumn = "85" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference = "1009"
+    description = "Number of active steps in the CompositeStep"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "5" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1911" startColumn = "5" endLine = "1911" endColumn = "72" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.t"
+    valueReference = "1010"
+    description = "= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "6" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2025" startColumn = "5" endLine = "2026" endColumn = "73" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.t_dummy"
+    valueReference = "1011"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "7" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2039" startColumn = "5" endLine = "2039" endColumn = "17" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.t_start"
+    valueReference = "1012"
+    description = "Time instant at which the transition would fire, if waitTime would be zero"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "8" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2037" startColumn = "5" endLine = "2038" endColumn = "85" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.t"
+    valueReference = "1013"
+    description = "= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "9" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2025" startColumn = "5" endLine = "2026" endColumn = "73" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.t_dummy"
+    valueReference = "1014"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "10" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2039" startColumn = "5" endLine = "2039" endColumn = "17" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.t_start"
+    valueReference = "1015"
+    description = "Time instant at which the transition would fire, if waitTime would be zero"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "11" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2037" startColumn = "5" endLine = "2038" endColumn = "85" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Position_output"
+    valueReference = "1016"
+    variability = "continuous" isDiscrete = "false"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "12" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "76" startColumn = "5" endLine = "76" endColumn = "58" fileWritable = "true">
+    <Real start="60.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference = "1017"
+    description = "Number of active steps in the CompositeStep"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "13" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1911" startColumn = "5" endLine = "1911" endColumn = "72" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.t"
+    valueReference = "1018"
+    description = "= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "14" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2025" startColumn = "5" endLine = "2026" endColumn = "73" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.t_dummy"
+    valueReference = "1019"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "15" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2039" startColumn = "5" endLine = "2039" endColumn = "17" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.t_start"
+    valueReference = "1020"
+    description = "Time instant at which the transition would fire, if waitTime would be zero"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "16" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2037" startColumn = "5" endLine = "2038" endColumn = "85" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.t"
+    valueReference = "1021"
+    description = "= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "17" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2025" startColumn = "5" endLine = "2026" endColumn = "73" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.t_dummy"
+    valueReference = "1022"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "18" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2039" startColumn = "5" endLine = "2039" endColumn = "17" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.t_start"
+    valueReference = "1023"
+    description = "Time instant at which the transition would fire, if waitTime would be zero"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "19" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2037" startColumn = "5" endLine = "2038" endColumn = "85" fileWritable = "true">
+    <Real fixed="true" useNominal="false" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Sensor1_Position_output"
+    valueReference = "1024"
+    variability = "continuous" isDiscrete = "false"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "20" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "78" startColumn = "5" endLine = "78" endColumn = "66" fileWritable = "true">
+    <Real start="100.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Sensor2_Position_output"
+    valueReference = "1025"
+    variability = "continuous" isDiscrete = "false"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "21" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "79" startColumn = "5" endLine = "79" endColumn = "66" fileWritable = "true">
+    <Real start="500.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Distance_input"
+    valueReference = "1026"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "1"
+    alias = "noAlias"
+    classIndex = "22" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "72" startColumn = "5" endLine = "72" endColumn = "62" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Length_input"
+    valueReference = "1027"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "2"
+    alias = "noAlias"
+    classIndex = "23" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "73" startColumn = "5" endLine = "73" endColumn = "60" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.subgraphStatePort.activeSteps"
+    valueReference = "1028"
+    description = "Number of active steps in the CompositeStep"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "24" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1923" startColumn = "5" endLine = "1923" endColumn = "72" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.subgraphStatePort.activeStepsDummy"
+    valueReference = "1029"
+    description = "Dummy variable in order that connector fulfills restriction of connector"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "25" classType = "rAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1920" startColumn = "5" endLine = "1922" endColumn = "109" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Light_Position"
+    valueReference = "1030"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "0" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "97" startColumn = "5" endLine = "97" endColumn = "49" fileWritable = "true">
+    <Real start="60.0" fixed="true" useNominal="false" unit="m" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.waitTime"
+    valueReference = "1031"
+    description = "Wait time before transition fires"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "1" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2022" startColumn = "5" endLine = "2024" endColumn = "61" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" min="0.0" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.waitTime"
+    valueReference = "1032"
+    description = "Wait time before transition fires"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "2" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2022" startColumn = "5" endLine = "2024" endColumn = "61" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" min="0.0" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.waitTime"
+    valueReference = "1033"
+    description = "Wait time before transition fires"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "3" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2022" startColumn = "5" endLine = "2024" endColumn = "61" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" min="0.0" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.waitTime"
+    valueReference = "1034"
+    description = "Wait time before transition fires"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "4" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2022" startColumn = "5" endLine = "2024" endColumn = "61" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" min="0.0" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.waitTime"
+    valueReference = "1035"
+    description = "Wait time before transition fires"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "5" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2022" startColumn = "5" endLine = "2024" endColumn = "61" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" min="0.0" unit="s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Sensor1_Position"
+    valueReference = "1036"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "6" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "93" startColumn = "5" endLine = "93" endColumn = "52" fileWritable = "true">
+    <Real start="100.0" fixed="true" useNominal="false" unit="m" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Sensor2_Position"
+    valueReference = "1037"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "7" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "95" startColumn = "5" endLine = "95" endColumn = "52" fileWritable = "true">
+    <Real start="500.0" fixed="true" useNominal="false" unit="m" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference = "1038"
+    description = "Dummy variable in order that connector fulfills restriction of connector"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.subgraphStatePort.activeStepsDummy" aliasVariableId="29"
+    classIndex = "0" classType = "rAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1908" startColumn = "5" endLine = "1910" endColumn = "108" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference = "1039"
+    description = "Dummy variable in order that connector fulfills restriction of connector"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.subgraphStatePort.activeStepsDummy" aliasVariableId="29"
+    classIndex = "1" classType = "rAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1908" startColumn = "5" endLine = "1910" endColumn = "108" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference = "1040"
+    description = "Dummy variable in order that connector fulfills restriction of connector"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.subgraphStatePort.activeStepsDummy" aliasVariableId="29"
+    classIndex = "2" classType = "rAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1908" startColumn = "5" endLine = "1910" endColumn = "108" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Distance"
+    valueReference = "1041"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Train_Distance_input" aliasVariableId="26"
+    classIndex = "3" classType = "rAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "109" startColumn = "5" endLine = "109" endColumn = "24" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Length"
+    valueReference = "1042"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Train_Length_input" aliasVariableId="27"
+    classIndex = "4" classType = "rAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "110" startColumn = "5" endLine = "110" endColumn = "22" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "ColorState_output"
+    valueReference = "1043"
+    variability = "discrete" isDiscrete = "true"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "iAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "75" startColumn = "5" endLine = "75" endColumn = "63" fileWritable = "true">
+    <Integer fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "state"
+    valueReference = "1044"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "iAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "91" startColumn = "5" endLine = "91" endColumn = "54" fileWritable = "true">
+    <Integer start="1" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.activeSteps"
+    valueReference = "1045"
+    description = "Number of active steps within the stategraph"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "iAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2731" startColumn = "3" endLine = "2731" endColumn = "76" fileWritable = "true">
+    <Integer fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.nIn"
+    valueReference = "1046"
+    description = "Number of input connections"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1929" startColumn = "5" endLine = "1929" endColumn = "67" fileWritable = "true">
+    <Integer start="2" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.nOut"
+    valueReference = "1047"
+    description = "Number of output connections"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1930" startColumn = "5" endLine = "1930" endColumn = "69" fileWritable = "true">
+    <Integer start="1" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.nIn"
+    valueReference = "1048"
+    description = "Number of input connections"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1929" startColumn = "5" endLine = "1929" endColumn = "67" fileWritable = "true">
+    <Integer start="2" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.nOut"
+    valueReference = "1049"
+    description = "Number of output connections"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "3" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1930" startColumn = "5" endLine = "1930" endColumn = "69" fileWritable = "true">
+    <Integer start="2" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.nIn"
+    valueReference = "1050"
+    description = "Number of input connections"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "4" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1929" startColumn = "5" endLine = "1929" endColumn = "67" fileWritable = "true">
+    <Integer start="1" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.nOut"
+    valueReference = "1051"
+    description = "Number of output connections"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "5" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1930" startColumn = "5" endLine = "1930" endColumn = "69" fileWritable = "true">
+    <Integer start="2" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse1"
+    valueReference = "1052"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse2"
+    valueReference = "1053"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse3"
+    valueReference = "1054"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse4"
+    valueReference = "1055"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "3" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse5"
+    valueReference = "1056"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "4" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse6"
+    valueReference = "1057"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "5" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition1"
+    valueReference = "1058"
+    description = "Train_Passed_Sensor2"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "6" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "154" startColumn = "38" endLine = "154" endColumn = "73" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition2"
+    valueReference = "1059"
+    description = "Train_Passed_Sensor2_Activated and not Train_Passed_Sensor2"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "7" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "156" startColumn = "76" endLine = "156" endColumn = "93" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition3"
+    valueReference = "1060"
+    description = "Red.active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "8" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "159" startColumn = "27" endLine = "159" endColumn = "52" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition4"
+    valueReference = "1061"
+    description = "Gate_Angle &lt;= 0.0"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "9" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "160" startColumn = "30" endLine = "160" endColumn = "55" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition5"
+    valueReference = "1062"
+    description = "On.active or Off.active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "10" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "161" startColumn = "40" endLine = "161" endColumn = "64" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition6"
+    valueReference = "1063"
+    description = "Gate_Angle &gt;= 90.0"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "11" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "162" startColumn = "31" endLine = "162" endColumn = "57" fileWritable = "true">
+    <Boolean start="true" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Failure_input"
+    valueReference = "1064"
+    variability = "continuous" isDiscrete = "true"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "0"
+    alias = "noAlias"
+    classIndex = "12" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "74" startColumn = "5" endLine = "74" endColumn = "58" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.active"
+    valueReference = "1065"
+    description = "= true if step is active, otherwise the step is not active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "13" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2171" startColumn = "3" endLine = "2172" endColumn = "67" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.inPort[2].occupied"
+    valueReference = "1066"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "14" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1791" startColumn = "5" endLine = "1791" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.localActive"
+    valueReference = "1067"
+    description = "= true if step is active, otherwise the step is not active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "15" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1936" startColumn = "5" endLine = "1938" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.newActive"
+    valueReference = "1068"
+    description = "Value of active in the next iteration"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "16" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1953" startColumn = "5" endLine = "1954" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.oldActive"
+    valueReference = "1069"
+    description = "Value of active when CompositeStep was aborted"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "17" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1955" startColumn = "5" endLine = "1955" endColumn = "71" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.enableFire"
+    valueReference = "1070"
+    description = "= true, if all firing conditions are true"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "18" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2027" startColumn = "5" endLine = "2027" endColumn = "74" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.active"
+    valueReference = "1071"
+    description = "= true if step is active, otherwise the step is not active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "19" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2110" startColumn = "3" endLine = "2111" endColumn = "67" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.inPort[2].occupied"
+    valueReference = "1072"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "20" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1791" startColumn = "5" endLine = "1791" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.localActive"
+    valueReference = "1073"
+    description = "= true if step is active, otherwise the step is not active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "21" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1936" startColumn = "5" endLine = "1938" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.newActive"
+    valueReference = "1074"
+    description = "Value of active in the next iteration"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "22" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1953" startColumn = "5" endLine = "1954" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.oldActive"
+    valueReference = "1075"
+    description = "Value of active when CompositeStep was aborted"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "23" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1955" startColumn = "5" endLine = "1955" endColumn = "71" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outPort[2].available"
+    valueReference = "1076"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "24" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1809" startColumn = "5" endLine = "1809" endColumn = "84" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.enableFire"
+    valueReference = "1077"
+    description = "= true, if all firing conditions are true"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "25" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2027" startColumn = "5" endLine = "2027" endColumn = "74" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.enableFire"
+    valueReference = "1078"
+    description = "= true, if all firing conditions are true"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "26" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2027" startColumn = "5" endLine = "2027" endColumn = "74" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.active"
+    valueReference = "1079"
+    description = "= true if step is active, otherwise the step is not active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "27" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2171" startColumn = "3" endLine = "2172" endColumn = "67" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.localActive"
+    valueReference = "1080"
+    description = "= true if step is active, otherwise the step is not active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "28" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1936" startColumn = "5" endLine = "1938" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.newActive"
+    valueReference = "1081"
+    description = "Value of active in the next iteration"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "29" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1953" startColumn = "5" endLine = "1954" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.oldActive"
+    valueReference = "1082"
+    description = "Value of active when CompositeStep was aborted"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "30" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1955" startColumn = "5" endLine = "1955" endColumn = "71" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outPort[2].available"
+    valueReference = "1083"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "31" classType = "bAlg"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1809" startColumn = "5" endLine = "1809" endColumn = "84" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.enableFire"
+    valueReference = "1084"
+    description = "= true, if all firing conditions are true"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "32" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2027" startColumn = "5" endLine = "2027" endColumn = "74" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.enableFire"
+    valueReference = "1085"
+    description = "= true, if all firing conditions are true"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "33" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2027" startColumn = "5" endLine = "2027" endColumn = "74" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Safe_Passage"
+    valueReference = "1086"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "34" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "100" startColumn = "5" endLine = "100" endColumn = "40" fileWritable = "true">
+    <Boolean start="false" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Passed_Sensor1"
+    valueReference = "1087"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "35" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "98" startColumn = "5" endLine = "98" endColumn = "48" fileWritable = "true">
+    <Boolean start="false" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Passed_Sensor2"
+    valueReference = "1088"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "36" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "99" startColumn = "5" endLine = "99" endColumn = "48" fileWritable = "true">
+    <Boolean start="false" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Train_Passed_Sensor2_Activated"
+    valueReference = "1089"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "37" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "102" startColumn = "5" endLine = "102" endColumn = "56" fileWritable = "true">
+    <Boolean start="false" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.resume"
+    valueReference = "1090"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "38" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2088" startColumn = "5" endLine = "2088" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.suspend"
+    valueReference = "1091"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "39" classType = "bAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2087" startColumn = "5" endLine = "2087" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.enableTimer"
+    valueReference = "1092"
+    description = "= true, if timer is enabled"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "bPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2020" startColumn = "5" endLine = "2021" endColumn = "56" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.enableTimer"
+    valueReference = "1093"
+    description = "= true, if timer is enabled"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "bPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2020" startColumn = "5" endLine = "2021" endColumn = "56" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.enableTimer"
+    valueReference = "1094"
+    description = "= true, if timer is enabled"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "bPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2020" startColumn = "5" endLine = "2021" endColumn = "56" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.enableTimer"
+    valueReference = "1095"
+    description = "= true, if timer is enabled"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "3" classType = "bPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2020" startColumn = "5" endLine = "2021" endColumn = "56" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.enableTimer"
+    valueReference = "1096"
+    description = "= true, if timer is enabled"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "4" classType = "bPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2020" startColumn = "5" endLine = "2021" endColumn = "56" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Failure"
+    valueReference = "1097"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Failure_input" aliasVariableId="12"
+    classIndex = "0" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Letöltés/onlab/TrainCrossing/TrainCrossing.mo" startLine = "103" startColumn = "5" endLine = "103" endColumn = "33" fileWritable = "true">
+    <Boolean start="false" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.inPort[1].occupied"
+    valueReference = "1098"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Off.active" aliasVariableId="13"
+    classIndex = "1" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1791" startColumn = "5" endLine = "1791" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.inPort[1].set"
+    valueReference = "1099"
+    description = "true, if transition fires and step is activated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToOff.enableFire" aliasVariableId="25"
+    classIndex = "2" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1792" startColumn = "5" endLine = "1792" endColumn = "101" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.inPort[2].set"
+    valueReference = "1100"
+    description = "true, if transition fires and step is activated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOff.enableFire" aliasVariableId="32"
+    classIndex = "3" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1792" startColumn = "5" endLine = "1792" endColumn = "101" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outPort[1].available"
+    valueReference = "1101"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Off.active" aliasVariableId="13"
+    classIndex = "4" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1809" startColumn = "5" endLine = "1809" endColumn = "84" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outPort[1].reset"
+    valueReference = "1102"
+    description = "true, if transition fires and step is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OffToOn.enableFire" aliasVariableId="18"
+    classIndex = "5" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1811" startColumn = "5" endLine = "1812" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outerStatePort.localActive"
+    valueReference = "1103"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Off.active" aliasVariableId="13"
+    classIndex = "6" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1947" startColumn = "7" endLine = "1947" endColumn = "32" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outerStatePort.subgraphStatePort.resume"
+    valueReference = "1104"
+    description = "= true, if resume transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.resume" aliasVariableId="38"
+    classIndex = "7" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1907" startColumn = "5" endLine = "1907" endColumn = "79" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Off.outerStatePort.subgraphStatePort.suspend"
+    valueReference = "1105"
+    description = "= true, if suspend transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.suspend" aliasVariableId="39"
+    classIndex = "8" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1905" startColumn = "5" endLine = "1906" endColumn = "63" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.condition"
+    valueReference = "1106"
+    description = "= true, if transition may fire (time varying expression)"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "negatedAlias" aliasVariable="Failure_input" aliasVariableId="54"
+    classIndex = "9" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2229" startColumn = "3" endLine = "2231" endColumn = "48" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.fire"
+    valueReference = "1107"
+    description = "= true, if transition fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OffToOn.enableFire" aliasVariableId="18"
+    classIndex = "10" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2028" startColumn = "5" endLine = "2028" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.inPort.available"
+    valueReference = "1108"
+    description = "true, if step connected to the transition input is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Off.active" aliasVariableId="13"
+    classIndex = "11" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1831" startColumn = "5" endLine = "1833" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.inPort.reset"
+    valueReference = "1109"
+    description = "true, if transition fires and the step connected to the transition input is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OffToOn.enableFire" aliasVariableId="18"
+    classIndex = "12" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1834" startColumn = "5" endLine = "1836" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.localCondition"
+    valueReference = "1110"
+    description = "= true, if transition may fire"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "negatedAlias" aliasVariable="Failure_input" aliasVariableId="58"
+    classIndex = "13" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2018" startColumn = "5" endLine = "2019" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.outPort.occupied"
+    valueReference = "1111"
+    description = "true, if step connected to the transition output is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.inPort[2].occupied" aliasVariableId="20"
+    classIndex = "14" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1853" startColumn = "5" endLine = "1855" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OffToOn.outPort.set"
+    valueReference = "1112"
+    description = "true, if transition fires and step connected to the transition output becomes active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OffToOn.enableFire" aliasVariableId="18"
+    classIndex = "15" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1856" startColumn = "5" endLine = "1858" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.inPort[1].occupied"
+    valueReference = "1113"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.active" aliasVariableId="19"
+    classIndex = "16" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1791" startColumn = "5" endLine = "1791" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.inPort[1].set"
+    valueReference = "1114"
+    description = "true, if transition fires and step is activated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOn.enableFire" aliasVariableId="33"
+    classIndex = "17" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1792" startColumn = "5" endLine = "1792" endColumn = "101" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.inPort[2].set"
+    valueReference = "1115"
+    description = "true, if transition fires and step is activated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OffToOn.enableFire" aliasVariableId="18"
+    classIndex = "18" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1792" startColumn = "5" endLine = "1792" endColumn = "101" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outPort[1].available"
+    valueReference = "1116"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.active" aliasVariableId="19"
+    classIndex = "19" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1809" startColumn = "5" endLine = "1809" endColumn = "84" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outPort[1].reset"
+    valueReference = "1117"
+    description = "true, if transition fires and step is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToRed.enableFire" aliasVariableId="26"
+    classIndex = "20" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1811" startColumn = "5" endLine = "1812" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outPort[2].reset"
+    valueReference = "1118"
+    description = "true, if transition fires and step is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToOff.enableFire" aliasVariableId="25"
+    classIndex = "21" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1811" startColumn = "5" endLine = "1812" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outerStatePort.localActive"
+    valueReference = "1119"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.active" aliasVariableId="19"
+    classIndex = "22" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1947" startColumn = "7" endLine = "1947" endColumn = "32" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outerStatePort.subgraphStatePort.resume"
+    valueReference = "1120"
+    description = "= true, if resume transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.resume" aliasVariableId="38"
+    classIndex = "23" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1907" startColumn = "5" endLine = "1907" endColumn = "79" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "On.outerStatePort.subgraphStatePort.suspend"
+    valueReference = "1121"
+    description = "= true, if suspend transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.suspend" aliasVariableId="39"
+    classIndex = "24" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1905" startColumn = "5" endLine = "1906" endColumn = "63" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.condition"
+    valueReference = "1122"
+    description = "= true, if transition may fire (time varying expression)"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Failure_input" aliasVariableId="12"
+    classIndex = "25" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2229" startColumn = "3" endLine = "2231" endColumn = "48" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.fire"
+    valueReference = "1123"
+    description = "= true, if transition fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToOff.enableFire" aliasVariableId="25"
+    classIndex = "26" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2028" startColumn = "5" endLine = "2028" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.inPort.available"
+    valueReference = "1124"
+    description = "true, if step connected to the transition input is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.outPort[2].available" aliasVariableId="24"
+    classIndex = "27" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1831" startColumn = "5" endLine = "1833" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.inPort.reset"
+    valueReference = "1125"
+    description = "true, if transition fires and the step connected to the transition input is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToOff.enableFire" aliasVariableId="25"
+    classIndex = "28" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1834" startColumn = "5" endLine = "1836" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.localCondition"
+    valueReference = "1126"
+    description = "= true, if transition may fire"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Failure_input" aliasVariableId="12"
+    classIndex = "29" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2018" startColumn = "5" endLine = "2019" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.outPort.occupied"
+    valueReference = "1127"
+    description = "true, if step connected to the transition output is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Off.active" aliasVariableId="13"
+    classIndex = "30" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1853" startColumn = "5" endLine = "1855" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToOff.outPort.set"
+    valueReference = "1128"
+    description = "true, if transition fires and step connected to the transition output becomes active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToOff.enableFire" aliasVariableId="25"
+    classIndex = "31" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1856" startColumn = "5" endLine = "1858" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.condition"
+    valueReference = "1129"
+    description = "= true, if transition may fire (time varying expression)"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Train_Passed_Sensor1" aliasVariableId="35"
+    classIndex = "32" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2229" startColumn = "3" endLine = "2231" endColumn = "48" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.fire"
+    valueReference = "1130"
+    description = "= true, if transition fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToRed.enableFire" aliasVariableId="26"
+    classIndex = "33" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2028" startColumn = "5" endLine = "2028" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.inPort.available"
+    valueReference = "1131"
+    description = "true, if step connected to the transition input is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.active" aliasVariableId="19"
+    classIndex = "34" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1831" startColumn = "5" endLine = "1833" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.inPort.reset"
+    valueReference = "1132"
+    description = "true, if transition fires and the step connected to the transition input is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToRed.enableFire" aliasVariableId="26"
+    classIndex = "35" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1834" startColumn = "5" endLine = "1836" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.localCondition"
+    valueReference = "1133"
+    description = "= true, if transition may fire"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Train_Passed_Sensor1" aliasVariableId="35"
+    classIndex = "36" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2018" startColumn = "5" endLine = "2019" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.outPort.occupied"
+    valueReference = "1134"
+    description = "true, if step connected to the transition output is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="$whenCondition3" aliasVariableId="8"
+    classIndex = "37" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1853" startColumn = "5" endLine = "1855" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "OnToRed.outPort.set"
+    valueReference = "1135"
+    description = "true, if transition fires and step connected to the transition output becomes active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToRed.enableFire" aliasVariableId="26"
+    classIndex = "38" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1856" startColumn = "5" endLine = "1858" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.inPort[1].occupied"
+    valueReference = "1136"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="$whenCondition3" aliasVariableId="8"
+    classIndex = "39" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1791" startColumn = "5" endLine = "1791" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.inPort[1].set"
+    valueReference = "1137"
+    description = "true, if transition fires and step is activated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="OnToRed.enableFire" aliasVariableId="26"
+    classIndex = "40" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1792" startColumn = "5" endLine = "1792" endColumn = "101" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outPort[1].available"
+    valueReference = "1138"
+    description = "true, if step is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="$whenCondition3" aliasVariableId="8"
+    classIndex = "41" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1809" startColumn = "5" endLine = "1809" endColumn = "84" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outPort[1].reset"
+    valueReference = "1139"
+    description = "true, if transition fires and step is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOn.enableFire" aliasVariableId="33"
+    classIndex = "42" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1811" startColumn = "5" endLine = "1812" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outPort[2].reset"
+    valueReference = "1140"
+    description = "true, if transition fires and step is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOff.enableFire" aliasVariableId="32"
+    classIndex = "43" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1811" startColumn = "5" endLine = "1812" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outerStatePort.localActive"
+    valueReference = "1141"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="$whenCondition3" aliasVariableId="8"
+    classIndex = "44" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1947" startColumn = "7" endLine = "1947" endColumn = "32" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outerStatePort.subgraphStatePort.resume"
+    valueReference = "1142"
+    description = "= true, if resume transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.resume" aliasVariableId="38"
+    classIndex = "45" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1907" startColumn = "5" endLine = "1907" endColumn = "79" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Red.outerStatePort.subgraphStatePort.suspend"
+    valueReference = "1143"
+    description = "= true, if suspend transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.suspend" aliasVariableId="39"
+    classIndex = "46" classType = "bAli"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1905" startColumn = "5" endLine = "1906" endColumn = "63" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.condition"
+    valueReference = "1144"
+    description = "= true, if transition may fire (time varying expression)"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Failure_input" aliasVariableId="12"
+    classIndex = "47" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2229" startColumn = "3" endLine = "2231" endColumn = "48" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.fire"
+    valueReference = "1145"
+    description = "= true, if transition fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOff.enableFire" aliasVariableId="32"
+    classIndex = "48" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2028" startColumn = "5" endLine = "2028" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.inPort.available"
+    valueReference = "1146"
+    description = "true, if step connected to the transition input is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Red.outPort[2].available" aliasVariableId="31"
+    classIndex = "49" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1831" startColumn = "5" endLine = "1833" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.inPort.reset"
+    valueReference = "1147"
+    description = "true, if transition fires and the step connected to the transition input is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOff.enableFire" aliasVariableId="32"
+    classIndex = "50" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1834" startColumn = "5" endLine = "1836" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.localCondition"
+    valueReference = "1148"
+    description = "= true, if transition may fire"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Failure_input" aliasVariableId="12"
+    classIndex = "51" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2018" startColumn = "5" endLine = "2019" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.outPort.occupied"
+    valueReference = "1149"
+    description = "true, if step connected to the transition output is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Off.inPort[2].occupied" aliasVariableId="14"
+    classIndex = "52" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1853" startColumn = "5" endLine = "1855" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOff.outPort.set"
+    valueReference = "1150"
+    description = "true, if transition fires and step connected to the transition output becomes active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOff.enableFire" aliasVariableId="32"
+    classIndex = "53" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1856" startColumn = "5" endLine = "1858" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.condition"
+    valueReference = "1151"
+    description = "= true, if transition may fire (time varying expression)"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Safe_Passage" aliasVariableId="34"
+    classIndex = "54" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2229" startColumn = "3" endLine = "2231" endColumn = "48" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.fire"
+    valueReference = "1152"
+    description = "= true, if transition fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOn.enableFire" aliasVariableId="33"
+    classIndex = "55" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2028" startColumn = "5" endLine = "2028" endColumn = "83" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.inPort.available"
+    valueReference = "1153"
+    description = "true, if step connected to the transition input is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="$whenCondition3" aliasVariableId="8"
+    classIndex = "56" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1831" startColumn = "5" endLine = "1833" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.inPort.reset"
+    valueReference = "1154"
+    description = "true, if transition fires and the step connected to the transition input is deactivated"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOn.enableFire" aliasVariableId="33"
+    classIndex = "57" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1834" startColumn = "5" endLine = "1836" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.localCondition"
+    valueReference = "1155"
+    description = "= true, if transition may fire"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="Safe_Passage" aliasVariableId="34"
+    classIndex = "58" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "2018" startColumn = "5" endLine = "2019" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.outPort.occupied"
+    valueReference = "1156"
+    description = "true, if step connected to the transition output is active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="On.active" aliasVariableId="19"
+    classIndex = "59" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1853" startColumn = "5" endLine = "1855" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "RedToOn.outPort.set"
+    valueReference = "1157"
+    description = "true, if transition fires and step connected to the transition output becomes active"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="RedToOn.enableFire" aliasVariableId="33"
+    classIndex = "60" classType = "bAli"
+    isProtected = "false" hideResult = "true"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1856" startColumn = "5" endLine = "1858" endColumn = "35" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.subgraphStatePort.resume"
+    valueReference = "1158"
+    description = "= true, if resume transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.resume" aliasVariableId="38"
+    classIndex = "61" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1919" startColumn = "5" endLine = "1919" endColumn = "80" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "stateGraphRoot.subgraphStatePort.suspend"
+    valueReference = "1159"
+    description = "= true, if suspend transition of CompositeStep fires"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "alias" aliasVariable="stateGraphRoot.suspend" aliasVariableId="39"
+    classIndex = "62" classType = "bAli"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Modelica/lib/omlibrary/Modelica 3.2.3/StateGraph.mo" startLine = "1917" startColumn = "5" endLine = "1918" endColumn = "63" fileWritable = "true">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+
+
+
+  </ModelVariables>
+
+
+</fmiModelDescription>
+

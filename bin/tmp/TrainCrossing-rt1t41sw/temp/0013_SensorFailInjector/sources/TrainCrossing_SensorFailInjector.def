@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  TrainCrossing_SensorFailInjector_fmiGetTypesPlatform @1
+  TrainCrossing_SensorFailInjector_fmiGetVersion @2
+  TrainCrossing_SensorFailInjector_fmiSetDebugLogging @3
+  TrainCrossing_SensorFailInjector_fmiInstantiate @4
+  TrainCrossing_SensorFailInjector_fmiFreeInstance @5
+  TrainCrossing_SensorFailInjector_fmiSetupExperiment @6
+  TrainCrossing_SensorFailInjector_fmiEnterInitializationMode @7
+  TrainCrossing_SensorFailInjector_fmiExitInitializationMode @8
+  TrainCrossing_SensorFailInjector_fmiTerminate @9
+  TrainCrossing_SensorFailInjector_fmiReset @10
+  TrainCrossing_SensorFailInjector_fmiGetReal @11
+  TrainCrossing_SensorFailInjector_fmiGetInteger @12
+  TrainCrossing_SensorFailInjector_fmiGetBoolean @13
+  TrainCrossing_SensorFailInjector_fmiGetString @14
+  TrainCrossing_SensorFailInjector_fmiSetReal @15
+  TrainCrossing_SensorFailInjector_fmiSetInteger @16
+  TrainCrossing_SensorFailInjector_fmiSetBoolean @17
+  TrainCrossing_SensorFailInjector_fmiSetString @18
+  TrainCrossing_SensorFailInjector_fmiGetFMUstate @19
+  TrainCrossing_SensorFailInjector_fmiSetFMUstate @20
+  TrainCrossing_SensorFailInjector_fmiFreeFMUstate @21
+  TrainCrossing_SensorFailInjector_fmiSerializedFMUstateSize @22
+  TrainCrossing_SensorFailInjector_fmiSerializeFMUstate @23
+  TrainCrossing_SensorFailInjector_fmiDeSerializeFMUstate @24
+  TrainCrossing_SensorFailInjector_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  TrainCrossing_SensorFailInjector_fmiEnterEventMode @26
+  TrainCrossing_SensorFailInjector_fmiNewDiscreteStates @27
+  TrainCrossing_SensorFailInjector_fmiEnterContinuousTimeMode @28
+  TrainCrossing_SensorFailInjector_fmiCompletedIntegratorStep @29
+  TrainCrossing_SensorFailInjector_fmiSetTime @30
+  TrainCrossing_SensorFailInjector_fmiSetContinuousStates @31
+  TrainCrossing_SensorFailInjector_fmiGetDerivatives @32
+  TrainCrossing_SensorFailInjector_fmiGetEventIndicators @33
+  TrainCrossing_SensorFailInjector_fmiGetContinuousStates @34
+  TrainCrossing_SensorFailInjector_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  TrainCrossing_SensorFailInjector_fmiSetRealInputDerivatives @36
+  TrainCrossing_SensorFailInjector_fmiGetRealOutputDerivatives @37
+  TrainCrossing_SensorFailInjector_fmiDoStep @38
+  TrainCrossing_SensorFailInjector_fmiCancelStep @39
+  TrainCrossing_SensorFailInjector_fmiGetStatus @40
+  TrainCrossing_SensorFailInjector_fmiGetRealStatus @41
+  TrainCrossing_SensorFailInjector_fmiGetIntegerStatus @42
+  TrainCrossing_SensorFailInjector_fmiGetBooleanStatus @43
+  TrainCrossing_SensorFailInjector_fmiGetStringStatus @44

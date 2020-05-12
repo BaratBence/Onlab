@@ -1,0 +1,17 @@
+{"format":"Transformational debugger info","version":1,
+"info":{"name":"TrainCrossing.Train","description":""},
+"variables":{
+"distance":{"comment":"","kind":"state","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":70,"lineEnd":70,"colStart":5,"colEnd":39}}},
+"der(distance)":{"comment":"","kind":"derivative","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":70,"lineEnd":70,"colStart":5,"colEnd":39}}},
+"Length":{"comment":"","kind":"parameter","type":"Real","unit":"m","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":67,"lineEnd":67,"colStart":5,"colEnd":41}}},
+"maxSpeed":{"comment":"","kind":"parameter","type":"Real","unit":"m/s","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":65,"lineEnd":65,"colStart":5,"colEnd":47}}}
+},
+"equations":[{"eqIndex":0,"tag":"dummy"},
+{"eqIndex":1,"section":"initial","tag":"assign","defines":["distance"],"uses":["$START.distance"],"equation":["$START.distance"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":2,"tag":"alias","equation":[3],"section":"initial"},
+{"eqIndex":3,"section":"regular","tag":"assign","defines":["der(distance)"],"uses":["maxSpeed"],"equation":["maxSpeed"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":74,"lineEnd":74,"colStart":5,"colEnd":26}}},
+{"eqIndex":4,"section":"start","tag":"assign","defines":["$START.distance"],"uses":["distanceStart"],"equation":["distanceStart"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":70,"lineEnd":70,"colStart":5,"colEnd":39}}}
+],
+"functions":[
+]
+}

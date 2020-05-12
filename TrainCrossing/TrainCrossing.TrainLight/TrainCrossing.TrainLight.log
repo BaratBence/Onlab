@@ -1,0 +1,26 @@
+C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.TrainLight/TrainCrossing.TrainLight.exe -port=54512 -logFormat=xmltcp -override=startTime=0,stopTime=20,stepSize=0.04,tolerance=1e-6,solver=dassl,outputFormat=mat,variableFilter=.* -r=C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.TrainLight/TrainCrossing.TrainLight_res.mat -w -lv=LOG_STATS -inputPath=C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.TrainLight -outputPath=C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.TrainLight
+The initialization finished successfully without homotopy method.
+### STATISTICS ###
+timer
+   0.0038885s          reading init.xml
+   0.0008751s          reading info.xml
+    0.003736s [ 11.4%] pre-initialization
+   0.0002261s [  0.7%] initialization
+   4.08e-005s [  0.1%] steps
+   0.0004496s [  1.4%] solver (excl. callbacks)
+   0.0042721s [ 13.0%] creating output-file
+   0.0002451s [  0.7%] event-handling
+   0.0003977s [  1.2%] overhead
+   0.0234755s [ 71.5%] simulation
+   0.0328429s [100.0%] total
+events
+    0 state events
+    0 time events
+solver: dassl
+   19 steps taken
+   19 calls of functionODE
+   18 evaluations of jacobian
+    0 error test failures
+    0 convergence test failures
+9.3e-006s time of jacobian evaluation
+The simulation finished successfully.

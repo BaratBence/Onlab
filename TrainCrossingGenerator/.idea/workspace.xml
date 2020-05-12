@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TrainCrossingGenerator.main:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a288eb32-4514-448a-9f32-de1d25e0b848" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/TrainCrossingGenerator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/Form-L.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car.fmu" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car.fmu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car_init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Car/TrainCrossing.Car_init.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Collection/TrainCrossing.Collection.fmu" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Collection/TrainCrossing.Collection.fmu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor.fmu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor_init.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor_prof.intdata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor_prof.realdata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing.CrashMonitor_res.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing_CrashMonitor_FMU.libs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing_CrashMonitor_FMU.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.CrashMonitor/TrainCrossing_CrashMonitor_FMU.makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector.fmu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector_init.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector_prof.intdata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector_prof.realdata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing.SensorFailInjector_res.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing_SensorFailInjector_FMU.libs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing_SensorFailInjector_FMU.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.SensorFailInjector/TrainCrossing_SensorFailInjector_FMU.makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Sensors/TrainCrossing.Sensors.fmu" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Sensors/TrainCrossing.Sensors.fmu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Train/TrainCrossing.Train.fmu" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Train/TrainCrossing.Train.fmu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Train/TrainCrossing_Train_FMU.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.Train/TrainCrossing_Train_FMU.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.TrainIntersectionController/TrainCrossing.TrainIntersectionController.fmu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.TrainIntersectionController/TrainCrossing_TrainIntersectionController_FMU.libs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.TrainIntersectionController/TrainCrossing_TrainIntersectionController_FMU.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.TrainIntersectionController/TrainCrossing_TrainIntersectionController_FMU.makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.TrainLight/TrainCrossing.TrainLight.fmu" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.TrainLight/TrainCrossing.TrainLight.fmu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.mo" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossing.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainCrossing/TrainCrossingDemo.lua" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainCrossing/TrainCrossingDemo.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TrainCrossingGenerator_main_jar/TrainCrossingGenerator.main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TrainCrossingGenerator_main_jar/TrainCrossingGenerator.main.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aCxd29FNpI5jASSZNRfV2Y1OQc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="E:/Letöltés/web_intro/.project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="TrainCrossingGenerator.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a288eb32-4514-448a-9f32-de1d25e0b848" name="Default Changelist" comment="" />
+      <created>1586253460952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586253460952</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="677" y="178" key="#Main" timestamp="1586683328634">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="178" key="#Main/0.0.1920.1040@0.0.1920.1040" timestamp="1586683328634" />
+    <state x="552" y="178" key="#Project_Structure" timestamp="1586253626259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1586253626259" />
+    <state x="664" y="349" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586256723461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="349" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586256723461" />
+    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1586341378813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586341378813" />
+    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586683328049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586683328049" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587130140043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587130140043" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1589318386721">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589318386721" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1589318386721">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589318386721" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1589318386721">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589318386721" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1589318386721">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589318386721" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1586684854311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586684854311" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1587125669908">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587125669908" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1586340920890">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586340920890" />
+  </component>
+</project>

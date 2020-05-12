@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="TrainCrossing.TrainLight"
+  guid="{74615363-f1d6-4219-a952-b6a849431a0f}"
+  description=""
+  generationTool="OpenModelica Compiler OpenModelica v1.15.0-dev-22-g5aea5c3aa6 (64-bit)"
+  generationDateAndTime="2020-04-04T11:07:37Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="5">
+  <ModelExchange
+    modelIdentifier="TrainCrossing_TrainLight">
+    <SourceFiles>
+      <File name="TrainCrossing_TrainLight.c" />
+      <File name="TrainCrossing_TrainLight_functions.c" />
+      <File name="TrainCrossing_TrainLight_records.c" />
+      <File name="TrainCrossing_TrainLight_01exo.c" />
+      <File name="TrainCrossing_TrainLight_02nls.c" />
+      <File name="TrainCrossing_TrainLight_03lsy.c" />
+      <File name="TrainCrossing_TrainLight_04set.c" />
+      <File name="TrainCrossing_TrainLight_05evt.c" />
+      <File name="TrainCrossing_TrainLight_06inz.c" />
+      <File name="TrainCrossing_TrainLight_07dly.c" />
+      <File name="TrainCrossing_TrainLight_08bnd.c" />
+      <File name="TrainCrossing_TrainLight_09alg.c" />
+      <File name="TrainCrossing_TrainLight_10asr.c" />
+      <File name="TrainCrossing_TrainLight_11mix.c" />
+      <File name="TrainCrossing_TrainLight_12jac.c" />
+      <File name="TrainCrossing_TrainLight_13opt.c" />
+      <File name="TrainCrossing_TrainLight_14lnz.c" />
+      <File name="TrainCrossing_TrainLight_15syn.c" />
+      <File name="TrainCrossing_TrainLight_16dae.c" />
+      <File name="TrainCrossing_TrainLight_17inl.c" />
+      <File name="TrainCrossing_TrainLight_init_fmu.c" />
+      <File name="TrainCrossing_TrainLight_FMU.c" />
+      <File name="./util/read_matlab4.c" />
+      <File name="./util/read_csv.c" />
+      <File name="./util/libcsv.c" />
+      <File name="gc/memory_pool.c" />
+      <File name="gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/division.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/jacobian_util.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </ModelExchange>
+  <CoSimulation
+    modelIdentifier="TrainCrossing_TrainLight"
+    needsExecutionTool="false"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="false"
+    maxOutputDerivativeOrder="0"
+    canRunAsynchronuously = "false"
+    canBeInstantiatedOnlyOncePerProcess="false"
+    canNotUseMemoryManagementFunctions="false"
+    canGetAndSetFMUstate="false"
+    canSerializeFMUstate="false"
+    >
+    <SourceFiles>
+      <File name="TrainCrossing_TrainLight.c" />
+      <File name="TrainCrossing_TrainLight_functions.c" />
+      <File name="TrainCrossing_TrainLight_records.c" />
+      <File name="TrainCrossing_TrainLight_01exo.c" />
+      <File name="TrainCrossing_TrainLight_02nls.c" />
+      <File name="TrainCrossing_TrainLight_03lsy.c" />
+      <File name="TrainCrossing_TrainLight_04set.c" />
+      <File name="TrainCrossing_TrainLight_05evt.c" />
+      <File name="TrainCrossing_TrainLight_06inz.c" />
+      <File name="TrainCrossing_TrainLight_07dly.c" />
+      <File name="TrainCrossing_TrainLight_08bnd.c" />
+      <File name="TrainCrossing_TrainLight_09alg.c" />
+      <File name="TrainCrossing_TrainLight_10asr.c" />
+      <File name="TrainCrossing_TrainLight_11mix.c" />
+      <File name="TrainCrossing_TrainLight_12jac.c" />
+      <File name="TrainCrossing_TrainLight_13opt.c" />
+      <File name="TrainCrossing_TrainLight_14lnz.c" />
+      <File name="TrainCrossing_TrainLight_15syn.c" />
+      <File name="TrainCrossing_TrainLight_16dae.c" />
+      <File name="TrainCrossing_TrainLight_17inl.c" />
+      <File name="TrainCrossing_TrainLight_init_fmu.c" />
+      <File name="TrainCrossing_TrainLight_FMU.c" />
+      <File name="./util/read_matlab4.c" />
+      <File name="./util/read_csv.c" />
+      <File name="./util/libcsv.c" />
+      <File name="gc/memory_pool.c" />
+      <File name="gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/division.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/jacobian_util.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </CoSimulation>
+  <TypeDefinitions>
+    <SimpleType name="TrainCrossing.TrainLightColor">
+      <Enumeration>
+        <Item name="on" value="1"/>
+        <Item name="red" value="2"/>
+        <Item name="off" value="3"/>
+      </Enumeration>
+    </SimpleType>
+  </TypeDefinitions>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="1.0" tolerance="1e-006"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="Gate_Angle"
+    valueReference="0"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="90.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="Gate_Rotation"
+    valueReference="1"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="der(Gate_Angle)"
+    valueReference="2"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "4" -->
+  <ScalarVariable
+    name="der(Gate_Rotation)"
+    valueReference="3"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "5" -->
+  <ScalarVariable
+    name="Gate_Angle_output"
+    valueReference="4"
+    variability="continuous"
+    causality="output"
+    initial="exact">
+    <Real start="90.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "6" -->
+  <ScalarVariable
+    name="Intersection_output"
+    valueReference="5"
+    variability="continuous"
+    causality="output"
+    initial="exact">
+    <Real start="50.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "7" -->
+  <ScalarVariable
+    name="Off.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference="6"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "8" -->
+  <ScalarVariable
+    name="OffToOn.t"
+    valueReference="7"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "9" -->
+  <ScalarVariable
+    name="OffToOn.t_dummy"
+    valueReference="8"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "10" -->
+  <ScalarVariable
+    name="OffToOn.t_start"
+    valueReference="9"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "11" -->
+  <ScalarVariable
+    name="On.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference="10"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "12" -->
+  <ScalarVariable
+    name="OnToOff.t"
+    valueReference="11"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "13" -->
+  <ScalarVariable
+    name="OnToOff.t_dummy"
+    valueReference="12"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "14" -->
+  <ScalarVariable
+    name="OnToOff.t_start"
+    valueReference="13"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "15" -->
+  <ScalarVariable
+    name="OnToRed.t"
+    valueReference="14"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "16" -->
+  <ScalarVariable
+    name="OnToRed.t_dummy"
+    valueReference="15"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "17" -->
+  <ScalarVariable
+    name="OnToRed.t_start"
+    valueReference="16"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "18" -->
+  <ScalarVariable
+    name="Red.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference="17"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "19" -->
+  <ScalarVariable
+    name="RedToOff.t"
+    valueReference="18"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "20" -->
+  <ScalarVariable
+    name="RedToOff.t_dummy"
+    valueReference="19"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "21" -->
+  <ScalarVariable
+    name="RedToOff.t_start"
+    valueReference="20"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "22" -->
+  <ScalarVariable
+    name="RedToOn.t"
+    valueReference="21"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "23" -->
+  <ScalarVariable
+    name="RedToOn.t_dummy"
+    valueReference="22"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "24" -->
+  <ScalarVariable
+    name="RedToOn.t_start"
+    valueReference="23"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "25" -->
+  <ScalarVariable
+    name="stateGraphRoot.subgraphStatePort.activeSteps"
+    valueReference="24"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "26" -->
+  <ScalarVariable
+    name="stateGraphRoot.subgraphStatePort.activeStepsDummy"
+    valueReference="25"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "27" -->
+  <ScalarVariable
+    name="Intersection"
+    valueReference="26"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="50.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "28" -->
+  <ScalarVariable
+    name="OffToOn.waitTime"
+    valueReference="27"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "29" -->
+  <ScalarVariable
+    name="OnToOff.waitTime"
+    valueReference="28"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "30" -->
+  <ScalarVariable
+    name="OnToRed.waitTime"
+    valueReference="29"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "31" -->
+  <ScalarVariable
+    name="RedToOff.waitTime"
+    valueReference="30"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "32" -->
+  <ScalarVariable
+    name="RedToOn.waitTime"
+    valueReference="31"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "33" -->
+  <ScalarVariable
+    name="_D_outputAlias_Gate_Angle_output"
+    valueReference="0"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "34" -->
+  <ScalarVariable
+    name="_D_outputAlias_Intersection_output"
+    valueReference="26"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "35" -->
+  <ScalarVariable
+    name="Off.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference="25"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "36" -->
+  <ScalarVariable
+    name="On.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference="25"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "37" -->
+  <ScalarVariable
+    name="Red.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference="25"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "38" -->
+  <ScalarVariable
+    name="ColorState_output"
+    valueReference="0"
+    variability="discrete"
+    causality="output"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "39" -->
+  <ScalarVariable
+    name="state"
+    valueReference="1"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Enumeration declaredType="TrainCrossing.TrainLightColor" start="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "40" -->
+  <ScalarVariable
+    name="stateGraphRoot.activeSteps"
+    valueReference="2"
+    description="Number of active steps within the stategraph"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "41" -->
+  <ScalarVariable
+    name="Off.nIn"
+    valueReference="3"
+    description="Number of input connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "42" -->
+  <ScalarVariable
+    name="Off.nOut"
+    valueReference="4"
+    description="Number of output connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "43" -->
+  <ScalarVariable
+    name="On.nIn"
+    valueReference="5"
+    description="Number of input connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "44" -->
+  <ScalarVariable
+    name="On.nOut"
+    valueReference="6"
+    description="Number of output connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "45" -->
+  <ScalarVariable
+    name="Red.nIn"
+    valueReference="7"
+    description="Number of input connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "46" -->
+  <ScalarVariable
+    name="Red.nOut"
+    valueReference="8"
+    description="Number of output connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "47" -->
+  <ScalarVariable
+    name="_D_outputAlias_ColorState_output"
+    valueReference="0"
+    variability="discrete"
+    causality="local"
+    >
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "48" -->
+  <ScalarVariable
+    name="_D_cse1"
+    valueReference="0"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "49" -->
+  <ScalarVariable
+    name="_D_cse2"
+    valueReference="1"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "50" -->
+  <ScalarVariable
+    name="_D_cse3"
+    valueReference="2"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "51" -->
+  <ScalarVariable
+    name="_D_cse4"
+    valueReference="3"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "52" -->
+  <ScalarVariable
+    name="_D_cse5"
+    valueReference="4"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "53" -->
+  <ScalarVariable
+    name="_D_cse6"
+    valueReference="5"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "54" -->
+  <ScalarVariable
+    name="_D_whenCondition1"
+    valueReference="6"
+    description="Red.active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "55" -->
+  <ScalarVariable
+    name="_D_whenCondition2"
+    valueReference="7"
+    description="Gate_Angle &lt;= 0.0"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "56" -->
+  <ScalarVariable
+    name="_D_whenCondition3"
+    valueReference="8"
+    description="On.active or Off.active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "57" -->
+  <ScalarVariable
+    name="_D_whenCondition4"
+    valueReference="9"
+    description="Gate_Angle &gt;= 90.0"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <!-- Index of variable = "58" -->
+  <ScalarVariable
+    name="Failure_input"
+    valueReference="10"
+    variability="discrete"
+    causality="input"
+    >
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "59" -->
+  <ScalarVariable
+    name="Off.active"
+    valueReference="11"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "60" -->
+  <ScalarVariable
+    name="Off.inPort[2].occupied"
+    valueReference="12"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "61" -->
+  <ScalarVariable
+    name="Off.localActive"
+    valueReference="13"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "62" -->
+  <ScalarVariable
+    name="Off.newActive"
+    valueReference="14"
+    description="Value of active in the next iteration"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "63" -->
+  <ScalarVariable
+    name="Off.oldActive"
+    valueReference="15"
+    description="Value of active when CompositeStep was aborted"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "64" -->
+  <ScalarVariable
+    name="OffToOn.enableFire"
+    valueReference="16"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "65" -->
+  <ScalarVariable
+    name="On.active"
+    valueReference="17"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "66" -->
+  <ScalarVariable
+    name="On.inPort[2].occupied"
+    valueReference="18"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "67" -->
+  <ScalarVariable
+    name="On.localActive"
+    valueReference="19"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "68" -->
+  <ScalarVariable
+    name="On.newActive"
+    valueReference="20"
+    description="Value of active in the next iteration"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "69" -->
+  <ScalarVariable
+    name="On.oldActive"
+    valueReference="21"
+    description="Value of active when CompositeStep was aborted"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "70" -->
+  <ScalarVariable
+    name="On.outPort[2].available"
+    valueReference="22"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "71" -->
+  <ScalarVariable
+    name="OnToOff.enableFire"
+    valueReference="23"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "72" -->
+  <ScalarVariable
+    name="OnToRed.enableFire"
+    valueReference="24"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "73" -->
+  <ScalarVariable
+    name="Red.active"
+    valueReference="25"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "74" -->
+  <ScalarVariable
+    name="Red.localActive"
+    valueReference="26"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "75" -->
+  <ScalarVariable
+    name="Red.newActive"
+    valueReference="27"
+    description="Value of active in the next iteration"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "76" -->
+  <ScalarVariable
+    name="Red.oldActive"
+    valueReference="28"
+    description="Value of active when CompositeStep was aborted"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "77" -->
+  <ScalarVariable
+    name="Red.outPort[2].available"
+    valueReference="29"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "78" -->
+  <ScalarVariable
+    name="RedToOff.enableFire"
+    valueReference="30"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "79" -->
+  <ScalarVariable
+    name="RedToOn.enableFire"
+    valueReference="31"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "80" -->
+  <ScalarVariable
+    name="Safe_Passage"
+    valueReference="32"
+    variability="discrete"
+    causality="input"
+    >
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "81" -->
+  <ScalarVariable
+    name="stateGraphRoot.resume"
+    valueReference="33"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "82" -->
+  <ScalarVariable
+    name="stateGraphRoot.suspend"
+    valueReference="34"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "83" -->
+  <ScalarVariable
+    name="OffToOn.enableTimer"
+    valueReference="35"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "84" -->
+  <ScalarVariable
+    name="OnToOff.enableTimer"
+    valueReference="36"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "85" -->
+  <ScalarVariable
+    name="OnToRed.enableTimer"
+    valueReference="37"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "86" -->
+  <ScalarVariable
+    name="RedToOff.enableTimer"
+    valueReference="38"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "87" -->
+  <ScalarVariable
+    name="RedToOn.enableTimer"
+    valueReference="39"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "88" -->
+  <ScalarVariable
+    name="Failure"
+    valueReference="10"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "89" -->
+  <ScalarVariable
+    name="Off.inPort[1].occupied"
+    valueReference="11"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "90" -->
+  <ScalarVariable
+    name="Off.inPort[1].set"
+    valueReference="23"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "91" -->
+  <ScalarVariable
+    name="Off.inPort[2].set"
+    valueReference="30"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "92" -->
+  <ScalarVariable
+    name="Off.outPort[1].available"
+    valueReference="11"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "93" -->
+  <ScalarVariable
+    name="Off.outPort[1].reset"
+    valueReference="16"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "94" -->
+  <ScalarVariable
+    name="Off.outerStatePort.localActive"
+    valueReference="11"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "95" -->
+  <ScalarVariable
+    name="Off.outerStatePort.subgraphStatePort.resume"
+    valueReference="33"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "96" -->
+  <ScalarVariable
+    name="Off.outerStatePort.subgraphStatePort.suspend"
+    valueReference="34"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "97" -->
+  <ScalarVariable
+    name="OffToOn.condition"
+    valueReference="49"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "98" -->
+  <ScalarVariable
+    name="OffToOn.fire"
+    valueReference="16"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "99" -->
+  <ScalarVariable
+    name="OffToOn.inPort.available"
+    valueReference="11"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "100" -->
+  <ScalarVariable
+    name="OffToOn.inPort.reset"
+    valueReference="16"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "101" -->
+  <ScalarVariable
+    name="OffToOn.localCondition"
+    valueReference="53"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "102" -->
+  <ScalarVariable
+    name="OffToOn.outPort.occupied"
+    valueReference="18"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "103" -->
+  <ScalarVariable
+    name="OffToOn.outPort.set"
+    valueReference="16"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "104" -->
+  <ScalarVariable
+    name="On.inPort[1].occupied"
+    valueReference="17"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "105" -->
+  <ScalarVariable
+    name="On.inPort[1].set"
+    valueReference="31"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "106" -->
+  <ScalarVariable
+    name="On.inPort[2].set"
+    valueReference="16"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "107" -->
+  <ScalarVariable
+    name="On.outPort[1].available"
+    valueReference="17"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "108" -->
+  <ScalarVariable
+    name="On.outPort[1].reset"
+    valueReference="24"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "109" -->
+  <ScalarVariable
+    name="On.outPort[2].reset"
+    valueReference="23"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "110" -->
+  <ScalarVariable
+    name="On.outerStatePort.localActive"
+    valueReference="17"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "111" -->
+  <ScalarVariable
+    name="On.outerStatePort.subgraphStatePort.resume"
+    valueReference="33"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "112" -->
+  <ScalarVariable
+    name="On.outerStatePort.subgraphStatePort.suspend"
+    valueReference="34"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "113" -->
+  <ScalarVariable
+    name="OnToOff.condition"
+    valueReference="10"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "114" -->
+  <ScalarVariable
+    name="OnToOff.fire"
+    valueReference="23"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "115" -->
+  <ScalarVariable
+    name="OnToOff.inPort.available"
+    valueReference="22"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "116" -->
+  <ScalarVariable
+    name="OnToOff.inPort.reset"
+    valueReference="23"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "117" -->
+  <ScalarVariable
+    name="OnToOff.localCondition"
+    valueReference="10"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "118" -->
+  <ScalarVariable
+    name="OnToOff.outPort.occupied"
+    valueReference="11"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "119" -->
+  <ScalarVariable
+    name="OnToOff.outPort.set"
+    valueReference="23"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "120" -->
+  <ScalarVariable
+    name="OnToRed.condition"
+    valueReference="72"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "121" -->
+  <ScalarVariable
+    name="OnToRed.fire"
+    valueReference="24"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "122" -->
+  <ScalarVariable
+    name="OnToRed.inPort.available"
+    valueReference="17"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "123" -->
+  <ScalarVariable
+    name="OnToRed.inPort.reset"
+    valueReference="24"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "124" -->
+  <ScalarVariable
+    name="OnToRed.localCondition"
+    valueReference="76"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "125" -->
+  <ScalarVariable
+    name="OnToRed.outPort.occupied"
+    valueReference="6"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "126" -->
+  <ScalarVariable
+    name="OnToRed.outPort.set"
+    valueReference="24"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "127" -->
+  <ScalarVariable
+    name="Red.inPort[1].occupied"
+    valueReference="6"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "128" -->
+  <ScalarVariable
+    name="Red.inPort[1].set"
+    valueReference="24"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "129" -->
+  <ScalarVariable
+    name="Red.outPort[1].available"
+    valueReference="6"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "130" -->
+  <ScalarVariable
+    name="Red.outPort[1].reset"
+    valueReference="31"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "131" -->
+  <ScalarVariable
+    name="Red.outPort[2].reset"
+    valueReference="30"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "132" -->
+  <ScalarVariable
+    name="Red.outerStatePort.localActive"
+    valueReference="6"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "133" -->
+  <ScalarVariable
+    name="Red.outerStatePort.subgraphStatePort.resume"
+    valueReference="33"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "134" -->
+  <ScalarVariable
+    name="Red.outerStatePort.subgraphStatePort.suspend"
+    valueReference="34"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "135" -->
+  <ScalarVariable
+    name="RedToOff.condition"
+    valueReference="10"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "136" -->
+  <ScalarVariable
+    name="RedToOff.fire"
+    valueReference="30"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "137" -->
+  <ScalarVariable
+    name="RedToOff.inPort.available"
+    valueReference="29"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "138" -->
+  <ScalarVariable
+    name="RedToOff.inPort.reset"
+    valueReference="30"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "139" -->
+  <ScalarVariable
+    name="RedToOff.localCondition"
+    valueReference="10"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "140" -->
+  <ScalarVariable
+    name="RedToOff.outPort.occupied"
+    valueReference="12"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "141" -->
+  <ScalarVariable
+    name="RedToOff.outPort.set"
+    valueReference="30"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "142" -->
+  <ScalarVariable
+    name="RedToOn.condition"
+    valueReference="32"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "143" -->
+  <ScalarVariable
+    name="RedToOn.fire"
+    valueReference="31"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "144" -->
+  <ScalarVariable
+    name="RedToOn.inPort.available"
+    valueReference="6"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "145" -->
+  <ScalarVariable
+    name="RedToOn.inPort.reset"
+    valueReference="31"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "146" -->
+  <ScalarVariable
+    name="RedToOn.localCondition"
+    valueReference="32"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "147" -->
+  <ScalarVariable
+    name="RedToOn.outPort.occupied"
+    valueReference="17"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "148" -->
+  <ScalarVariable
+    name="RedToOn.outPort.set"
+    valueReference="31"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "149" -->
+  <ScalarVariable
+    name="stateGraphRoot.subgraphStatePort.resume"
+    valueReference="33"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "150" -->
+  <ScalarVariable
+    name="stateGraphRoot.subgraphStatePort.suspend"
+    valueReference="34"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="5" dependencies="1" dependenciesKind="dependent" />
+      <Unknown index="6" dependencies="" dependenciesKind="" />
+      <Unknown index="38" dependencies="" dependenciesKind="" />
+    </Outputs>
+    <Derivatives>
+      <Unknown index="3" dependencies="2" dependenciesKind="dependent" />
+      <Unknown index="4" dependencies="" dependenciesKind="" />
+    </Derivatives>
+  </ModelStructure>
+</fmiModelDescription>

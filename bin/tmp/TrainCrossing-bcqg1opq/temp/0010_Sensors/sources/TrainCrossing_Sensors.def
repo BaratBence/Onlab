@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  TrainCrossing_Sensors_fmiGetTypesPlatform @1
+  TrainCrossing_Sensors_fmiGetVersion @2
+  TrainCrossing_Sensors_fmiSetDebugLogging @3
+  TrainCrossing_Sensors_fmiInstantiate @4
+  TrainCrossing_Sensors_fmiFreeInstance @5
+  TrainCrossing_Sensors_fmiSetupExperiment @6
+  TrainCrossing_Sensors_fmiEnterInitializationMode @7
+  TrainCrossing_Sensors_fmiExitInitializationMode @8
+  TrainCrossing_Sensors_fmiTerminate @9
+  TrainCrossing_Sensors_fmiReset @10
+  TrainCrossing_Sensors_fmiGetReal @11
+  TrainCrossing_Sensors_fmiGetInteger @12
+  TrainCrossing_Sensors_fmiGetBoolean @13
+  TrainCrossing_Sensors_fmiGetString @14
+  TrainCrossing_Sensors_fmiSetReal @15
+  TrainCrossing_Sensors_fmiSetInteger @16
+  TrainCrossing_Sensors_fmiSetBoolean @17
+  TrainCrossing_Sensors_fmiSetString @18
+  TrainCrossing_Sensors_fmiGetFMUstate @19
+  TrainCrossing_Sensors_fmiSetFMUstate @20
+  TrainCrossing_Sensors_fmiFreeFMUstate @21
+  TrainCrossing_Sensors_fmiSerializedFMUstateSize @22
+  TrainCrossing_Sensors_fmiSerializeFMUstate @23
+  TrainCrossing_Sensors_fmiDeSerializeFMUstate @24
+  TrainCrossing_Sensors_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  TrainCrossing_Sensors_fmiEnterEventMode @26
+  TrainCrossing_Sensors_fmiNewDiscreteStates @27
+  TrainCrossing_Sensors_fmiEnterContinuousTimeMode @28
+  TrainCrossing_Sensors_fmiCompletedIntegratorStep @29
+  TrainCrossing_Sensors_fmiSetTime @30
+  TrainCrossing_Sensors_fmiSetContinuousStates @31
+  TrainCrossing_Sensors_fmiGetDerivatives @32
+  TrainCrossing_Sensors_fmiGetEventIndicators @33
+  TrainCrossing_Sensors_fmiGetContinuousStates @34
+  TrainCrossing_Sensors_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  TrainCrossing_Sensors_fmiSetRealInputDerivatives @36
+  TrainCrossing_Sensors_fmiGetRealOutputDerivatives @37
+  TrainCrossing_Sensors_fmiDoStep @38
+  TrainCrossing_Sensors_fmiCancelStep @39
+  TrainCrossing_Sensors_fmiGetStatus @40
+  TrainCrossing_Sensors_fmiGetRealStatus @41
+  TrainCrossing_Sensors_fmiGetIntegerStatus @42
+  TrainCrossing_Sensors_fmiGetBooleanStatus @43
+  TrainCrossing_Sensors_fmiGetStringStatus @44

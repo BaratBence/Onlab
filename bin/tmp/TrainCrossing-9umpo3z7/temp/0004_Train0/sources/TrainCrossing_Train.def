@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  TrainCrossing_Train_fmiGetTypesPlatform @1
+  TrainCrossing_Train_fmiGetVersion @2
+  TrainCrossing_Train_fmiSetDebugLogging @3
+  TrainCrossing_Train_fmiInstantiate @4
+  TrainCrossing_Train_fmiFreeInstance @5
+  TrainCrossing_Train_fmiSetupExperiment @6
+  TrainCrossing_Train_fmiEnterInitializationMode @7
+  TrainCrossing_Train_fmiExitInitializationMode @8
+  TrainCrossing_Train_fmiTerminate @9
+  TrainCrossing_Train_fmiReset @10
+  TrainCrossing_Train_fmiGetReal @11
+  TrainCrossing_Train_fmiGetInteger @12
+  TrainCrossing_Train_fmiGetBoolean @13
+  TrainCrossing_Train_fmiGetString @14
+  TrainCrossing_Train_fmiSetReal @15
+  TrainCrossing_Train_fmiSetInteger @16
+  TrainCrossing_Train_fmiSetBoolean @17
+  TrainCrossing_Train_fmiSetString @18
+  TrainCrossing_Train_fmiGetFMUstate @19
+  TrainCrossing_Train_fmiSetFMUstate @20
+  TrainCrossing_Train_fmiFreeFMUstate @21
+  TrainCrossing_Train_fmiSerializedFMUstateSize @22
+  TrainCrossing_Train_fmiSerializeFMUstate @23
+  TrainCrossing_Train_fmiDeSerializeFMUstate @24
+  TrainCrossing_Train_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  TrainCrossing_Train_fmiEnterEventMode @26
+  TrainCrossing_Train_fmiNewDiscreteStates @27
+  TrainCrossing_Train_fmiEnterContinuousTimeMode @28
+  TrainCrossing_Train_fmiCompletedIntegratorStep @29
+  TrainCrossing_Train_fmiSetTime @30
+  TrainCrossing_Train_fmiSetContinuousStates @31
+  TrainCrossing_Train_fmiGetDerivatives @32
+  TrainCrossing_Train_fmiGetEventIndicators @33
+  TrainCrossing_Train_fmiGetContinuousStates @34
+  TrainCrossing_Train_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  TrainCrossing_Train_fmiSetRealInputDerivatives @36
+  TrainCrossing_Train_fmiGetRealOutputDerivatives @37
+  TrainCrossing_Train_fmiDoStep @38
+  TrainCrossing_Train_fmiCancelStep @39
+  TrainCrossing_Train_fmiGetStatus @40
+  TrainCrossing_Train_fmiGetRealStatus @41
+  TrainCrossing_Train_fmiGetIntegerStatus @42
+  TrainCrossing_Train_fmiGetBooleanStatus @43
+  TrainCrossing_Train_fmiGetStringStatus @44

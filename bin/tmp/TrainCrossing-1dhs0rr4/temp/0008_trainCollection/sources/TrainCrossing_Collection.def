@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  TrainCrossing_Collection_fmiGetTypesPlatform @1
+  TrainCrossing_Collection_fmiGetVersion @2
+  TrainCrossing_Collection_fmiSetDebugLogging @3
+  TrainCrossing_Collection_fmiInstantiate @4
+  TrainCrossing_Collection_fmiFreeInstance @5
+  TrainCrossing_Collection_fmiSetupExperiment @6
+  TrainCrossing_Collection_fmiEnterInitializationMode @7
+  TrainCrossing_Collection_fmiExitInitializationMode @8
+  TrainCrossing_Collection_fmiTerminate @9
+  TrainCrossing_Collection_fmiReset @10
+  TrainCrossing_Collection_fmiGetReal @11
+  TrainCrossing_Collection_fmiGetInteger @12
+  TrainCrossing_Collection_fmiGetBoolean @13
+  TrainCrossing_Collection_fmiGetString @14
+  TrainCrossing_Collection_fmiSetReal @15
+  TrainCrossing_Collection_fmiSetInteger @16
+  TrainCrossing_Collection_fmiSetBoolean @17
+  TrainCrossing_Collection_fmiSetString @18
+  TrainCrossing_Collection_fmiGetFMUstate @19
+  TrainCrossing_Collection_fmiSetFMUstate @20
+  TrainCrossing_Collection_fmiFreeFMUstate @21
+  TrainCrossing_Collection_fmiSerializedFMUstateSize @22
+  TrainCrossing_Collection_fmiSerializeFMUstate @23
+  TrainCrossing_Collection_fmiDeSerializeFMUstate @24
+  TrainCrossing_Collection_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  TrainCrossing_Collection_fmiEnterEventMode @26
+  TrainCrossing_Collection_fmiNewDiscreteStates @27
+  TrainCrossing_Collection_fmiEnterContinuousTimeMode @28
+  TrainCrossing_Collection_fmiCompletedIntegratorStep @29
+  TrainCrossing_Collection_fmiSetTime @30
+  TrainCrossing_Collection_fmiSetContinuousStates @31
+  TrainCrossing_Collection_fmiGetDerivatives @32
+  TrainCrossing_Collection_fmiGetEventIndicators @33
+  TrainCrossing_Collection_fmiGetContinuousStates @34
+  TrainCrossing_Collection_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  TrainCrossing_Collection_fmiSetRealInputDerivatives @36
+  TrainCrossing_Collection_fmiGetRealOutputDerivatives @37
+  TrainCrossing_Collection_fmiDoStep @38
+  TrainCrossing_Collection_fmiCancelStep @39
+  TrainCrossing_Collection_fmiGetStatus @40
+  TrainCrossing_Collection_fmiGetRealStatus @41
+  TrainCrossing_Collection_fmiGetIntegerStatus @42
+  TrainCrossing_Collection_fmiGetBooleanStatus @43
+  TrainCrossing_Collection_fmiGetStringStatus @44

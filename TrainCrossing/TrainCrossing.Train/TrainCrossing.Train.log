@@ -1,0 +1,29 @@
+C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.Train/TrainCrossing.Train.exe -port=64080 -logFormat=xmltcp -override=startTime=0,stopTime=1,stepSize=0.002,tolerance=1e-6,solver=dassl,outputFormat=mat,variableFilter=.* -r=C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.Train/TrainCrossing.Train_res.mat -w -lv=LOG_STATS -inputPath=C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.Train -outputPath=C:/Users/Bence/AppData/Local/Temp/OpenModelica/OMEdit/TrainCrossing.Train
+The following assertion has been violated at time 0.000000
+state >= TrainCrossing.TrainLightColor.on and state <= TrainCrossing.TrainLightColor.red
+Variable violating min/max constraint: TrainCrossing.TrainLightColor.on <= state <= TrainCrossing.TrainLightColor.red, has value: 0
+The initialization finished successfully without homotopy method.
+### STATISTICS ###
+timer
+   0.0018997s          reading init.xml
+   0.0007451s          reading info.xml
+    0.005412s [ 12.6%] pre-initialization
+   0.0002894s [  0.7%] initialization
+   3.95e-005s [  0.1%] steps
+    0.000593s [  1.4%] solver (excl. callbacks)
+   0.0051674s [ 12.0%] creating output-file
+   0.0001139s [  0.3%] event-handling
+   0.0004657s [  1.1%] overhead
+   0.0309111s [ 71.9%] simulation
+    0.042992s [100.0%] total
+events
+    0 state events
+    0 time events
+solver: dassl
+   28 steps taken
+   28 calls of functionODE
+   27 evaluations of jacobian
+    0 error test failures
+    0 convergence test failures
+2.42e-005s time of jacobian evaluation
+The simulation finished successfully.

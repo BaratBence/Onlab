@@ -1,0 +1,444 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+
+<!-- description of the model interface using an extention of the FMI standard -->
+<fmiModelDescription
+  fmiVersion                          = "1.0"
+
+  modelName                           = "TrainCrossing.Car"
+  modelIdentifier                     = "TrainCrossing_Car"
+
+  OPENMODELICAHOME                    = "E:/Modelica/"
+
+  guid                                = "{924ce0bc-9213-4158-9413-fc4181424918}"
+
+  description                         = ""
+  generationTool                      = "OpenModelica Compiler OpenModelica v1.15.0-dev-22-g5aea5c3aa6 (64-bit)"
+  generationDateAndTime               = "2020-05-08T12:55:00Z"
+
+  variableNamingConvention            = "structured"
+
+  numberOfEventIndicators             = "5"  cmt_numberOfEventIndicators             = "NG:       number of zero crossings,                           FMI"
+  numberOfTimeEvents                  = "0"  cmt_numberOfTimeEvents                  = "NG_SAM:   number of zero crossings that are samples,          OMC"
+
+  numberOfInputVariables              = "9"  cmt_numberOfInputVariables              = "NI:       number of inputvar on topmodel,                     OMC"
+  numberOfOutputVariables             = "2"  cmt_numberOfOutputVariables             = "NO:       number of outputvar on topmodel,                    OMC"
+
+  numberOfExternalObjects             = "0"  cmt_numberOfExternalObjects             = "NEXT:     number of external objects,                         OMC"
+  numberOfFunctions                   = "1"  cmt_numberOfFunctions                   = "NFUNC:    number of functions used by the simulation,         OMC"
+
+  numberOfContinuousStates            = "3"  cmt_numberOfContinuousStates            = "NX:       number of states,                                   FMI"
+  numberOfRealAlgebraicVariables      = "13"  cmt_numberOfRealAlgebraicVariables      = "NY:       number of real variables,                           OMC"
+  numberOfRealAlgebraicAliasVariables = "0"  cmt_numberOfRealAlgebraicAliasVariables = "NA:       number of alias variables,                          OMC"
+  numberOfRealParameters              = "6"  cmt_numberOfRealParameters              = "NP:       number of parameters,                               OMC"
+
+  numberOfIntegerAlgebraicVariables   = "2"  cmt_numberOfIntegerAlgebraicVariables   = "NYINT:    number of alg. int variables,                       OMC"
+  numberOfIntegerAliasVariables       = "0"  cmt_numberOfIntegerAliasVariables       = "NAINT:    number of alias int variables,                      OMC"
+  numberOfIntegerParameters           = "1"  cmt_numberOfIntegerParameters           = "NPINT:    number of int parameters,                           OMC"
+
+  numberOfStringAlgebraicVariables    = "0"  cmt_numberOfStringAlgebraicVariables    = "NYSTR:    number of alg. string variables,                    OMC"
+  numberOfStringAliasVariables        = "0"  cmt_numberOfStringAliasVariables        = "NASTR:    number of alias string variables,                   OMC"
+  numberOfStringParameters            = "0"  cmt_numberOfStringParameters            = "NPSTR:    number of string parameters,                        OMC"
+
+  numberOfBooleanAlgebraicVariables   = "5"  cmt_numberOfBooleanAlgebraicVariables   = "NYBOOL:   number of alg. bool variables,                      OMC"
+  numberOfBooleanAliasVariables       = "0"  cmt_numberOfBooleanAliasVariables       = "NABOOL:   number of alias bool variables,                     OMC"
+  numberOfBooleanParameters           = "0"  cmt_numberOfBooleanParameters           = "NPBOOL:   number of bool parameters,                          OMC" >
+
+
+  <!-- startTime, stopTime, tolerance are FMI specific, all others are OMC specific -->
+  <DefaultExperiment
+    startTime      = "0"
+    stopTime       = "1"
+    stepSize       = "0.002"
+    tolerance      = "1e-006"
+    solver        = "dassl"
+    outputFormat      = "mat"
+    variableFilter      = ".*" />
+
+  <!-- variables in the model -->
+  <ModelVariables>
+
+  <ScalarVariable
+    name = "acceleration"
+    valueReference = "1000"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "0" classType = "rSta"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "24" startColumn = "5" endLine = "24" endColumn = "33" fileWritable = "true">
+    <Real start="0.0" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "distance"
+    valueReference = "1001"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "rSta"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "22" startColumn = "5" endLine = "22" endColumn = "39" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "speed"
+    valueReference = "1002"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "rSta"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "23" startColumn = "5" endLine = "23" endColumn = "31" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "der(acceleration)"
+    valueReference = "1003"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "rDer"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "24" startColumn = "5" endLine = "24" endColumn = "33" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "der(distance)"
+    valueReference = "1004"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "rDer"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "22" startColumn = "5" endLine = "22" endColumn = "39" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "der(speed)"
+    valueReference = "1005"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "rDer"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "23" startColumn = "5" endLine = "23" endColumn = "31" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$cse1"
+    valueReference = "1006"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "rAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "" startLine = "0" startColumn = "0" endLine = "0" endColumn = "0" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "BreakingDistance"
+    valueReference = "1007"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "21" startColumn = "5" endLine = "21" endColumn = "26" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Distance"
+    valueReference = "1008"
+    variability = "continuous" isDiscrete = "false"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "8" startColumn = "5" endLine = "8" endColumn = "51" fileWritable = "true">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "DistanceVec[1]"
+    valueReference = "1009"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "0"
+    alias = "noAlias"
+    classIndex = "3" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "7" startColumn = "5" endLine = "7" endColumn = "65" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "DistanceVec[2]"
+    valueReference = "1010"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "1"
+    alias = "noAlias"
+    classIndex = "4" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "7" startColumn = "5" endLine = "7" endColumn = "65" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "DistanceVec[3]"
+    valueReference = "1011"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "2"
+    alias = "noAlias"
+    classIndex = "5" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "7" startColumn = "5" endLine = "7" endColumn = "65" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Gate_Angle"
+    valueReference = "1012"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "3"
+    alias = "noAlias"
+    classIndex = "6" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "4" startColumn = "5" endLine = "4" endColumn = "52" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Length"
+    valueReference = "1013"
+    variability = "continuous" isDiscrete = "false"
+    causality = "output" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "7" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "9" startColumn = "5" endLine = "9" endColumn = "49" fileWritable = "true">
+    <Real start="4.74" fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "LengthVec[1]"
+    valueReference = "1014"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "4"
+    alias = "noAlias"
+    classIndex = "8" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "6" startColumn = "5" endLine = "6" endColumn = "63" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "LengthVec[2]"
+    valueReference = "1015"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "5"
+    alias = "noAlias"
+    classIndex = "9" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "6" startColumn = "5" endLine = "6" endColumn = "63" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "LengthVec[3]"
+    valueReference = "1016"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "6"
+    alias = "noAlias"
+    classIndex = "10" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "6" startColumn = "5" endLine = "6" endColumn = "63" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "Target"
+    valueReference = "1017"
+    variability = "continuous" isDiscrete = "false"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "8"
+    alias = "noAlias"
+    classIndex = "11" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "5" startColumn = "5" endLine = "5" endColumn = "48" fileWritable = "true">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "tmp"
+    valueReference = "1018"
+    variability = "continuous" isDiscrete = "false"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "12" classType = "rAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "20" startColumn = "5" endLine = "20" endColumn = "24" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "breakingDeceleration"
+    valueReference = "1019"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "0" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "12" startColumn = "5" endLine = "12" endColumn = "63" fileWritable = "true">
+    <Real start="13.14" fixed="true" useNominal="false" unit="m/s2" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "distanceStart"
+    valueReference = "1020"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "1" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "16" startColumn = "5" endLine = "16" endColumn = "51" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" unit="m" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "isClumsy"
+    valueReference = "1021"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "2" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "17" startColumn = "5" endLine = "17" endColumn = "51" fileWritable = "true">
+    <Real start="0.0" fixed="true" useNominal="false" unit="boolean" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "length"
+    valueReference = "1022"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "3" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "15" startColumn = "5" endLine = "15" endColumn = "45" fileWritable = "true">
+    <Real start="4.74" fixed="true" useNominal="false" unit="m" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "maxAcceleration"
+    valueReference = "1023"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "4" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "14" startColumn = "5" endLine = "14" endColumn = "56" fileWritable = "true">
+    <Real start="8.76" fixed="true" useNominal="false" unit="m/s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "maxSpeed"
+    valueReference = "1024"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "true"
+    alias = "noAlias"
+    classIndex = "5" classType = "rPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "13" startColumn = "5" endLine = "13" endColumn = "49" fileWritable = "true">
+    <Real start="16.7" fixed="true" useNominal="false" unit="m/s" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "LightColor"
+    valueReference = "1025"
+    variability = "continuous" isDiscrete = "true"
+    causality = "input" isValueChangeable = "true"
+    inputIndex = "7"
+    alias = "noAlias"
+    classIndex = "0" classType = "iAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "3" startColumn = "5" endLine = "3" endColumn = "55" fileWritable = "true">
+    <Integer fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "state"
+    valueReference = "1026"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "iAlg"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "10" startColumn = "5" endLine = "10" endColumn = "54" fileWritable = "true">
+    <Integer start="1" fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "size"
+    valueReference = "1027"
+    variability = "parameter" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "iPar"
+    isProtected = "false" hideResult = "false"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "18" startColumn = "5" endLine = "18" endColumn = "31" fileWritable = "true">
+    <Integer start="3" fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition1"
+    valueReference = "1028"
+    description = "speed &gt;= maxSpeed"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "0" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "51" startColumn = "7" endLine = "51" endColumn = "32" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition2"
+    valueReference = "1029"
+    description = "distance + BreakingDistance + 5.0 &gt;= Target and distance + BreakingDistance - 5.0 &lt;= Target and speed &gt; 0.0 and state == TrainCrossing.TrainLightColor.red"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "1" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "55" startColumn = "7" endLine = "55" endColumn = "50" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition3"
+    valueReference = "1030"
+    description = "distance &lt; Target and state == TrainCrossing.TrainLightColor.on and Gate_Angle &gt;= 90.0 and speed &lt; maxSpeed"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "2" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "59" startColumn = "7" endLine = "59" endColumn = "44" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition4"
+    valueReference = "1031"
+    description = "speed &lt;= 0.0"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "3" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "63" startColumn = "7" endLine = "63" endColumn = "32" fileWritable = "true">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable
+    name = "$whenCondition5"
+    valueReference = "1032"
+    description = "isClumsy &gt;= 1.0 and distance - Length &lt;= Target and distance &gt;= Target"
+    variability = "discrete" isDiscrete = "true"
+    causality = "internal" isValueChangeable = "false"
+    alias = "noAlias"
+    classIndex = "4" classType = "bAlg"
+    isProtected = "true" hideResult = "true"
+    fileName = "E:/Onlab/TrainCrossing2.2/TrainCrossing.mo" startLine = "65" startColumn = "84" endLine = "65" endColumn = "109" fileWritable = "true">
+    <Boolean start="false" fixed="true" />
+  </ScalarVariable>
+
+
+
+  </ModelVariables>
+
+
+</fmiModelDescription>
+

@@ -1,0 +1,2838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="TrainCrossing.TrainIntersection"
+  guid="{05650d15-c8ce-4b51-a6df-54d69fa8c824}"
+  description=""
+  generationTool="OpenModelica Compiler OpenModelica v1.15.0-dev-22-g5aea5c3aa6 (64-bit)"
+  generationDateAndTime="2020-05-07T14:32:17Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="22">
+  <ModelExchange
+    modelIdentifier="TrainCrossing_TrainIntersection">
+    <SourceFiles>
+      <File name="TrainCrossing_TrainIntersection.c" />
+      <File name="TrainCrossing_TrainIntersection_functions.c" />
+      <File name="TrainCrossing_TrainIntersection_records.c" />
+      <File name="TrainCrossing_TrainIntersection_01exo.c" />
+      <File name="TrainCrossing_TrainIntersection_02nls.c" />
+      <File name="TrainCrossing_TrainIntersection_03lsy.c" />
+      <File name="TrainCrossing_TrainIntersection_04set.c" />
+      <File name="TrainCrossing_TrainIntersection_05evt.c" />
+      <File name="TrainCrossing_TrainIntersection_06inz.c" />
+      <File name="TrainCrossing_TrainIntersection_07dly.c" />
+      <File name="TrainCrossing_TrainIntersection_08bnd.c" />
+      <File name="TrainCrossing_TrainIntersection_09alg.c" />
+      <File name="TrainCrossing_TrainIntersection_10asr.c" />
+      <File name="TrainCrossing_TrainIntersection_11mix.c" />
+      <File name="TrainCrossing_TrainIntersection_12jac.c" />
+      <File name="TrainCrossing_TrainIntersection_13opt.c" />
+      <File name="TrainCrossing_TrainIntersection_14lnz.c" />
+      <File name="TrainCrossing_TrainIntersection_15syn.c" />
+      <File name="TrainCrossing_TrainIntersection_16dae.c" />
+      <File name="TrainCrossing_TrainIntersection_17inl.c" />
+      <File name="TrainCrossing_TrainIntersection_init_fmu.c" />
+      <File name="TrainCrossing_TrainIntersection_FMU.c" />
+      <File name="./util/read_matlab4.c" />
+      <File name="./util/read_csv.c" />
+      <File name="./util/libcsv.c" />
+      <File name="gc/memory_pool.c" />
+      <File name="gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/division.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/jacobian_util.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </ModelExchange>
+  <CoSimulation
+    modelIdentifier="TrainCrossing_TrainIntersection"
+    needsExecutionTool="false"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="false"
+    maxOutputDerivativeOrder="0"
+    canRunAsynchronuously = "false"
+    canBeInstantiatedOnlyOncePerProcess="false"
+    canNotUseMemoryManagementFunctions="false"
+    canGetAndSetFMUstate="false"
+    canSerializeFMUstate="false"
+    >
+    <SourceFiles>
+      <File name="TrainCrossing_TrainIntersection.c" />
+      <File name="TrainCrossing_TrainIntersection_functions.c" />
+      <File name="TrainCrossing_TrainIntersection_records.c" />
+      <File name="TrainCrossing_TrainIntersection_01exo.c" />
+      <File name="TrainCrossing_TrainIntersection_02nls.c" />
+      <File name="TrainCrossing_TrainIntersection_03lsy.c" />
+      <File name="TrainCrossing_TrainIntersection_04set.c" />
+      <File name="TrainCrossing_TrainIntersection_05evt.c" />
+      <File name="TrainCrossing_TrainIntersection_06inz.c" />
+      <File name="TrainCrossing_TrainIntersection_07dly.c" />
+      <File name="TrainCrossing_TrainIntersection_08bnd.c" />
+      <File name="TrainCrossing_TrainIntersection_09alg.c" />
+      <File name="TrainCrossing_TrainIntersection_10asr.c" />
+      <File name="TrainCrossing_TrainIntersection_11mix.c" />
+      <File name="TrainCrossing_TrainIntersection_12jac.c" />
+      <File name="TrainCrossing_TrainIntersection_13opt.c" />
+      <File name="TrainCrossing_TrainIntersection_14lnz.c" />
+      <File name="TrainCrossing_TrainIntersection_15syn.c" />
+      <File name="TrainCrossing_TrainIntersection_16dae.c" />
+      <File name="TrainCrossing_TrainIntersection_17inl.c" />
+      <File name="TrainCrossing_TrainIntersection_init_fmu.c" />
+      <File name="TrainCrossing_TrainIntersection_FMU.c" />
+      <File name="./util/read_matlab4.c" />
+      <File name="./util/read_csv.c" />
+      <File name="./util/libcsv.c" />
+      <File name="gc/memory_pool.c" />
+      <File name="gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/division.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/jacobian_util.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </CoSimulation>
+  <TypeDefinitions>
+    <SimpleType name="TrainCrossing.TrainLightColor">
+      <Enumeration>
+        <Item name="on" value="1"/>
+        <Item name="red" value="2"/>
+        <Item name="off" value="3"/>
+      </Enumeration>
+    </SimpleType>
+  </TypeDefinitions>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="1.0" tolerance="1e-006"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="car.acceleration"
+    valueReference="0"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="car.distance"
+    valueReference="1"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="car.speed"
+    valueReference="2"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "4" -->
+  <ScalarVariable
+    name="car1.acceleration"
+    valueReference="3"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "5" -->
+  <ScalarVariable
+    name="car1.distance"
+    valueReference="4"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "6" -->
+  <ScalarVariable
+    name="car1.speed"
+    valueReference="5"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "7" -->
+  <ScalarVariable
+    name="car2.acceleration"
+    valueReference="6"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "8" -->
+  <ScalarVariable
+    name="car2.distance"
+    valueReference="7"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "9" -->
+  <ScalarVariable
+    name="car2.speed"
+    valueReference="8"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "10" -->
+  <ScalarVariable
+    name="train.distance"
+    valueReference="9"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "11" -->
+  <ScalarVariable
+    name="train1.distance"
+    valueReference="10"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "12" -->
+  <ScalarVariable
+    name="train2.distance"
+    valueReference="11"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "13" -->
+  <ScalarVariable
+    name="trainlight.Gate_Angle"
+    valueReference="12"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="90.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "14" -->
+  <ScalarVariable
+    name="trainlight.Gate_Rotation"
+    valueReference="13"
+    variability="continuous"
+    causality="local"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "15" -->
+  <ScalarVariable
+    name="der(car.acceleration)"
+    valueReference="14"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "16" -->
+  <ScalarVariable
+    name="der(car.distance)"
+    valueReference="15"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "17" -->
+  <ScalarVariable
+    name="der(car.speed)"
+    valueReference="16"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "18" -->
+  <ScalarVariable
+    name="der(car1.acceleration)"
+    valueReference="17"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="4"/>
+  </ScalarVariable>
+  <!-- Index of variable = "19" -->
+  <ScalarVariable
+    name="der(car1.distance)"
+    valueReference="18"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="5"/>
+  </ScalarVariable>
+  <!-- Index of variable = "20" -->
+  <ScalarVariable
+    name="der(car1.speed)"
+    valueReference="19"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="6"/>
+  </ScalarVariable>
+  <!-- Index of variable = "21" -->
+  <ScalarVariable
+    name="der(car2.acceleration)"
+    valueReference="20"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="7"/>
+  </ScalarVariable>
+  <!-- Index of variable = "22" -->
+  <ScalarVariable
+    name="der(car2.distance)"
+    valueReference="21"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="8"/>
+  </ScalarVariable>
+  <!-- Index of variable = "23" -->
+  <ScalarVariable
+    name="der(car2.speed)"
+    valueReference="22"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="9"/>
+  </ScalarVariable>
+  <!-- Index of variable = "24" -->
+  <ScalarVariable
+    name="der(train.distance)"
+    valueReference="23"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="10"/>
+  </ScalarVariable>
+  <!-- Index of variable = "25" -->
+  <ScalarVariable
+    name="der(train1.distance)"
+    valueReference="24"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="11"/>
+  </ScalarVariable>
+  <!-- Index of variable = "26" -->
+  <ScalarVariable
+    name="der(train2.distance)"
+    valueReference="25"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="12"/>
+  </ScalarVariable>
+  <!-- Index of variable = "27" -->
+  <ScalarVariable
+    name="der(trainlight.Gate_Angle)"
+    valueReference="26"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="13"/>
+  </ScalarVariable>
+  <!-- Index of variable = "28" -->
+  <ScalarVariable
+    name="der(trainlight.Gate_Rotation)"
+    valueReference="27"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real derivative="14"/>
+  </ScalarVariable>
+  <!-- Index of variable = "29" -->
+  <ScalarVariable
+    name="_D_cse7"
+    valueReference="28"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "30" -->
+  <ScalarVariable
+    name="_D_cse8"
+    valueReference="29"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "31" -->
+  <ScalarVariable
+    name="_D_cse9"
+    valueReference="30"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "32" -->
+  <ScalarVariable
+    name="car.BreakingDistance"
+    valueReference="31"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "33" -->
+  <ScalarVariable
+    name="car1.BreakingDistance"
+    valueReference="32"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "34" -->
+  <ScalarVariable
+    name="car2.BreakingDistance"
+    valueReference="33"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "35" -->
+  <ScalarVariable
+    name="sensors.Intersection"
+    valueReference="34"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "36" -->
+  <ScalarVariable
+    name="trainlight.Off.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference="35"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "37" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.t"
+    valueReference="36"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "38" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.t_dummy"
+    valueReference="37"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "39" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.t_start"
+    valueReference="38"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "40" -->
+  <ScalarVariable
+    name="trainlight.On.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference="39"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "41" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.t"
+    valueReference="40"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "42" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.t_dummy"
+    valueReference="41"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "43" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.t_start"
+    valueReference="42"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "44" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.t"
+    valueReference="43"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "45" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.t_dummy"
+    valueReference="44"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "46" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.t_start"
+    valueReference="45"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "47" -->
+  <ScalarVariable
+    name="trainlight.Red.outerStatePort.subgraphStatePort.activeSteps"
+    valueReference="46"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "48" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.t"
+    valueReference="47"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "49" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.t_dummy"
+    valueReference="48"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "50" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.t_start"
+    valueReference="49"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "51" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.t"
+    valueReference="50"
+    description="= actual waiting time (transition will fire when t &gt; waitTime)"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "52" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.t_dummy"
+    valueReference="51"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "53" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.t_start"
+    valueReference="52"
+    description="Time instant at which the transition would fire, if waitTime would be zero"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "54" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.subgraphStatePort.activeSteps"
+    valueReference="53"
+    description="Number of active steps in the CompositeStep"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "55" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.subgraphStatePort.activeStepsDummy"
+    valueReference="54"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "56" -->
+  <ScalarVariable
+    name="car.Length"
+    valueReference="55"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="4.74" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "57" -->
+  <ScalarVariable
+    name="car.breakingDeceleration"
+    valueReference="56"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="13.14" unit="m/s2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "58" -->
+  <ScalarVariable
+    name="car.distanceStart"
+    valueReference="57"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="90.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "59" -->
+  <ScalarVariable
+    name="car.maxAcceleration"
+    valueReference="58"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="8.76" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "60" -->
+  <ScalarVariable
+    name="car.maxSpeed"
+    valueReference="59"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="16.7" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "61" -->
+  <ScalarVariable
+    name="car1.Length"
+    valueReference="60"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="4.74" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "62" -->
+  <ScalarVariable
+    name="car1.breakingDeceleration"
+    valueReference="61"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="13.14" unit="m/s2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "63" -->
+  <ScalarVariable
+    name="car1.distanceStart"
+    valueReference="62"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="40.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "64" -->
+  <ScalarVariable
+    name="car1.maxAcceleration"
+    valueReference="63"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="8.76" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "65" -->
+  <ScalarVariable
+    name="car1.maxSpeed"
+    valueReference="64"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="16.7" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "66" -->
+  <ScalarVariable
+    name="car2.Length"
+    valueReference="65"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="4.74" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "67" -->
+  <ScalarVariable
+    name="car2.breakingDeceleration"
+    valueReference="66"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="13.14" unit="m/s2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "68" -->
+  <ScalarVariable
+    name="car2.distanceStart"
+    valueReference="67"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "69" -->
+  <ScalarVariable
+    name="car2.maxAcceleration"
+    valueReference="68"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="8.76" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "70" -->
+  <ScalarVariable
+    name="car2.maxSpeed"
+    valueReference="69"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="16.7" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "71" -->
+  <ScalarVariable
+    name="sensors.Sensor1Position"
+    valueReference="70"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="200.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "72" -->
+  <ScalarVariable
+    name="sensors.Sensor2Position"
+    valueReference="71"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="700.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "73" -->
+  <ScalarVariable
+    name="train.Length"
+    valueReference="72"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="50.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "74" -->
+  <ScalarVariable
+    name="train.distanceStart"
+    valueReference="73"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="100.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "75" -->
+  <ScalarVariable
+    name="train.maxSpeed"
+    valueReference="74"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="70.0" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "76" -->
+  <ScalarVariable
+    name="train1.Length"
+    valueReference="75"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="50.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "77" -->
+  <ScalarVariable
+    name="train1.distanceStart"
+    valueReference="76"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "78" -->
+  <ScalarVariable
+    name="train1.maxSpeed"
+    valueReference="77"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="70.0" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "79" -->
+  <ScalarVariable
+    name="train2.Length"
+    valueReference="78"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="50.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "80" -->
+  <ScalarVariable
+    name="train2.distanceStart"
+    valueReference="79"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="-2000.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "81" -->
+  <ScalarVariable
+    name="train2.maxSpeed"
+    valueReference="80"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="70.0" unit="m/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "82" -->
+  <ScalarVariable
+    name="trainlight.Intersection"
+    valueReference="81"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="100.0" unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "83" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.waitTime"
+    valueReference="82"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "84" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.waitTime"
+    valueReference="83"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "85" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.waitTime"
+    valueReference="84"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "86" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.waitTime"
+    valueReference="85"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "87" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.waitTime"
+    valueReference="86"
+    description="Wait time before transition fires"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="0.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "88" -->
+  <ScalarVariable
+    name="car.DistanceVec[1]"
+    valueReference="1"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "89" -->
+  <ScalarVariable
+    name="car.DistanceVec[2]"
+    valueReference="4"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "90" -->
+  <ScalarVariable
+    name="car.DistanceVec[3]"
+    valueReference="7"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "91" -->
+  <ScalarVariable
+    name="car.Gate_Angle"
+    valueReference="12"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "92" -->
+  <ScalarVariable
+    name="car.LengthVec[1]"
+    valueReference="55"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "93" -->
+  <ScalarVariable
+    name="car.LengthVec[2]"
+    valueReference="60"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "94" -->
+  <ScalarVariable
+    name="car.LengthVec[3]"
+    valueReference="65"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "95" -->
+  <ScalarVariable
+    name="car.Target"
+    valueReference="81"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "96" -->
+  <ScalarVariable
+    name="car1.DistanceVec[1]"
+    valueReference="1"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "97" -->
+  <ScalarVariable
+    name="car1.DistanceVec[2]"
+    valueReference="4"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "98" -->
+  <ScalarVariable
+    name="car1.DistanceVec[3]"
+    valueReference="7"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "99" -->
+  <ScalarVariable
+    name="car1.Gate_Angle"
+    valueReference="12"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "100" -->
+  <ScalarVariable
+    name="car1.LengthVec[1]"
+    valueReference="55"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "101" -->
+  <ScalarVariable
+    name="car1.LengthVec[2]"
+    valueReference="60"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "102" -->
+  <ScalarVariable
+    name="car1.LengthVec[3]"
+    valueReference="65"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "103" -->
+  <ScalarVariable
+    name="car1.Target"
+    valueReference="81"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "104" -->
+  <ScalarVariable
+    name="car2.DistanceVec[1]"
+    valueReference="1"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "105" -->
+  <ScalarVariable
+    name="car2.DistanceVec[2]"
+    valueReference="4"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "106" -->
+  <ScalarVariable
+    name="car2.DistanceVec[3]"
+    valueReference="7"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "107" -->
+  <ScalarVariable
+    name="car2.Gate_Angle"
+    valueReference="12"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "108" -->
+  <ScalarVariable
+    name="car2.LengthVec[1]"
+    valueReference="55"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "109" -->
+  <ScalarVariable
+    name="car2.LengthVec[2]"
+    valueReference="60"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "110" -->
+  <ScalarVariable
+    name="car2.LengthVec[3]"
+    valueReference="65"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "111" -->
+  <ScalarVariable
+    name="car2.Target"
+    valueReference="81"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "112" -->
+  <ScalarVariable
+    name="sensors.DistanceVec[1]"
+    valueReference="9"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "113" -->
+  <ScalarVariable
+    name="sensors.DistanceVec[2]"
+    valueReference="10"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "114" -->
+  <ScalarVariable
+    name="sensors.DistanceVec[3]"
+    valueReference="11"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "115" -->
+  <ScalarVariable
+    name="sensors.LengthVec[1]"
+    valueReference="72"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "116" -->
+  <ScalarVariable
+    name="sensors.LengthVec[2]"
+    valueReference="75"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "117" -->
+  <ScalarVariable
+    name="sensors.LengthVec[3]"
+    valueReference="78"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "118" -->
+  <ScalarVariable
+    name="train.speed"
+    valueReference="74"
+    variability="continuous"
+    causality="local"
+    >
+    <Real unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "119" -->
+  <ScalarVariable
+    name="train1.speed"
+    valueReference="77"
+    variability="continuous"
+    causality="local"
+    >
+    <Real unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "120" -->
+  <ScalarVariable
+    name="train2.speed"
+    valueReference="80"
+    variability="continuous"
+    causality="local"
+    >
+    <Real unit="m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "121" -->
+  <ScalarVariable
+    name="trainlight.Gate_Angle_output"
+    valueReference="12"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "122" -->
+  <ScalarVariable
+    name="trainlight.Intersection_output"
+    valueReference="81"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "123" -->
+  <ScalarVariable
+    name="trainlight.Off.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference="54"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "124" -->
+  <ScalarVariable
+    name="trainlight.On.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference="54"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "125" -->
+  <ScalarVariable
+    name="trainlight.Red.outerStatePort.subgraphStatePort.activeStepsDummy"
+    valueReference="54"
+    description="Dummy variable in order that connector fulfills restriction of connector"
+    variability="continuous"
+    causality="local"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "126" -->
+  <ScalarVariable
+    name="car.state"
+    valueReference="0"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Enumeration declaredType="TrainCrossing.TrainLightColor" start="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "127" -->
+  <ScalarVariable
+    name="car1.state"
+    valueReference="1"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Enumeration declaredType="TrainCrossing.TrainLightColor" start="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "128" -->
+  <ScalarVariable
+    name="car2.LightColor"
+    valueReference="2"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "129" -->
+  <ScalarVariable
+    name="car2.state"
+    valueReference="3"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Enumeration declaredType="TrainCrossing.TrainLightColor" start="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "130" -->
+  <ScalarVariable
+    name="tic.Sensor1Input"
+    valueReference="4"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Integer start="0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "131" -->
+  <ScalarVariable
+    name="tic.Sensor2Output"
+    valueReference="5"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Integer start="0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "132" -->
+  <ScalarVariable
+    name="trainlight.state"
+    valueReference="6"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Enumeration declaredType="TrainCrossing.TrainLightColor" start="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "133" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.activeSteps"
+    valueReference="7"
+    description="Number of active steps within the stategraph"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "134" -->
+  <ScalarVariable
+    name="car.size"
+    valueReference="8"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "135" -->
+  <ScalarVariable
+    name="car1.size"
+    valueReference="9"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "136" -->
+  <ScalarVariable
+    name="car2.size"
+    valueReference="10"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "137" -->
+  <ScalarVariable
+    name="sensors.size"
+    valueReference="11"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "138" -->
+  <ScalarVariable
+    name="trainlight.Off.nIn"
+    valueReference="12"
+    description="Number of input connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "139" -->
+  <ScalarVariable
+    name="trainlight.Off.nOut"
+    valueReference="13"
+    description="Number of output connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "140" -->
+  <ScalarVariable
+    name="trainlight.On.nIn"
+    valueReference="14"
+    description="Number of input connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "141" -->
+  <ScalarVariable
+    name="trainlight.On.nOut"
+    valueReference="15"
+    description="Number of output connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "142" -->
+  <ScalarVariable
+    name="trainlight.Red.nIn"
+    valueReference="16"
+    description="Number of input connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "143" -->
+  <ScalarVariable
+    name="trainlight.Red.nOut"
+    valueReference="17"
+    description="Number of output connections"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "144" -->
+  <ScalarVariable
+    name="car.LightColor"
+    valueReference="2"
+    variability="discrete"
+    causality="local"
+    >
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "145" -->
+  <ScalarVariable
+    name="car1.LightColor"
+    valueReference="2"
+    variability="discrete"
+    causality="local"
+    >
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "146" -->
+  <ScalarVariable
+    name="trainlight.ColorState_output"
+    valueReference="2"
+    variability="discrete"
+    causality="local"
+    >
+    <Integer/>
+  </ScalarVariable>
+  <!-- Index of variable = "147" -->
+  <ScalarVariable
+    name="_D_cse1"
+    valueReference="0"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "148" -->
+  <ScalarVariable
+    name="_D_cse2"
+    valueReference="1"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "149" -->
+  <ScalarVariable
+    name="_D_cse3"
+    valueReference="2"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "150" -->
+  <ScalarVariable
+    name="_D_cse4"
+    valueReference="3"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "151" -->
+  <ScalarVariable
+    name="_D_cse5"
+    valueReference="4"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "152" -->
+  <ScalarVariable
+    name="_D_cse6"
+    valueReference="5"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "153" -->
+  <ScalarVariable
+    name="_D_whenCondition1"
+    valueReference="6"
+    description="tic.Sensor1_Active and not pre(tic.Sensor1_Active)"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "154" -->
+  <ScalarVariable
+    name="_D_whenCondition10"
+    valueReference="7"
+    description="car1.speed &lt;= 0.0"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "155" -->
+  <ScalarVariable
+    name="_D_whenCondition11"
+    valueReference="8"
+    description="car2.speed &gt;= car2.maxSpeed"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "156" -->
+  <ScalarVariable
+    name="_D_whenCondition12"
+    valueReference="9"
+    description="car2.distance + car2.BreakingDistance + 5.0 &gt;= trainlight.Intersection and car2.distance + car2.BreakingDistance - 5.0 &lt;= trainlight.Intersection and car2.speed &gt; 0.0 and car2.state == TrainCrossing.TrainLightColor.red"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "157" -->
+  <ScalarVariable
+    name="_D_whenCondition13"
+    valueReference="10"
+    description="car2.distance &lt; trainlight.Intersection and car2.state == TrainCrossing.TrainLightColor.on and trainlight.Gate_Angle &gt;= 90.0 and car2.speed &lt; car2.maxSpeed"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "158" -->
+  <ScalarVariable
+    name="_D_whenCondition14"
+    valueReference="11"
+    description="car2.speed &lt;= 0.0"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "159" -->
+  <ScalarVariable
+    name="_D_whenCondition15"
+    valueReference="12"
+    description="car2.distance - car2.Length &lt;= trainlight.Intersection and car2.distance &gt;= trainlight.Intersection"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "160" -->
+  <ScalarVariable
+    name="_D_whenCondition16"
+    valueReference="13"
+    description="trainlight.Red.active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "161" -->
+  <ScalarVariable
+    name="_D_whenCondition17"
+    valueReference="14"
+    description="trainlight.Gate_Angle &lt;= 0.0"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "162" -->
+  <ScalarVariable
+    name="_D_whenCondition18"
+    valueReference="15"
+    description="trainlight.On.active or trainlight.Off.active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "163" -->
+  <ScalarVariable
+    name="_D_whenCondition19"
+    valueReference="16"
+    description="trainlight.Gate_Angle &gt;= 90.0"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <!-- Index of variable = "164" -->
+  <ScalarVariable
+    name="_D_whenCondition2"
+    valueReference="17"
+    description="tic.Sensor2_Active &lt;&gt; pre(tic.Sensor2_Active) and not tic.Sensor2_Active and pre(tic.Sensor2_Active)"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "165" -->
+  <ScalarVariable
+    name="_D_whenCondition3"
+    valueReference="18"
+    description="car.speed &gt;= car.maxSpeed"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "166" -->
+  <ScalarVariable
+    name="_D_whenCondition4"
+    valueReference="19"
+    description="car.distance + car.BreakingDistance + 5.0 &gt;= trainlight.Intersection and car.distance + car.BreakingDistance - 5.0 &lt;= trainlight.Intersection and car.speed &gt; 0.0 and car.state == TrainCrossing.TrainLightColor.red"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "167" -->
+  <ScalarVariable
+    name="_D_whenCondition5"
+    valueReference="20"
+    description="car.distance &lt; trainlight.Intersection and car.state == TrainCrossing.TrainLightColor.on and trainlight.Gate_Angle &gt;= 90.0 and car.speed &lt; car.maxSpeed"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "168" -->
+  <ScalarVariable
+    name="_D_whenCondition6"
+    valueReference="21"
+    description="car.speed &lt;= 0.0"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "169" -->
+  <ScalarVariable
+    name="_D_whenCondition7"
+    valueReference="22"
+    description="car1.speed &gt;= car1.maxSpeed"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "170" -->
+  <ScalarVariable
+    name="_D_whenCondition8"
+    valueReference="23"
+    description="car1.distance + car1.BreakingDistance + 5.0 &gt;= trainlight.Intersection and car1.distance + car1.BreakingDistance - 5.0 &lt;= trainlight.Intersection and car1.speed &gt; 0.0 and car1.state == TrainCrossing.TrainLightColor.red"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "171" -->
+  <ScalarVariable
+    name="_D_whenCondition9"
+    valueReference="24"
+    description="car1.distance &lt; trainlight.Intersection and car1.state == TrainCrossing.TrainLightColor.on and trainlight.Gate_Angle &gt;= 90.0 and car1.speed &lt; car1.maxSpeed"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "172" -->
+  <ScalarVariable
+    name="sensors.Train_Detected1[1]"
+    valueReference="25"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "173" -->
+  <ScalarVariable
+    name="sensors.Train_Detected1[2]"
+    valueReference="26"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "174" -->
+  <ScalarVariable
+    name="sensors.Train_Detected1[3]"
+    valueReference="27"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "175" -->
+  <ScalarVariable
+    name="sensors.Train_Detected2[1]"
+    valueReference="28"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "176" -->
+  <ScalarVariable
+    name="sensors.Train_Detected2[2]"
+    valueReference="29"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "177" -->
+  <ScalarVariable
+    name="sensors.Train_Detected2[3]"
+    valueReference="30"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "178" -->
+  <ScalarVariable
+    name="tic.Sensor1_Active"
+    valueReference="31"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "179" -->
+  <ScalarVariable
+    name="tic.Sensor2_Active"
+    valueReference="32"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "180" -->
+  <ScalarVariable
+    name="trainlight.Off.active"
+    valueReference="33"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "181" -->
+  <ScalarVariable
+    name="trainlight.Off.inPort[2].occupied"
+    valueReference="34"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "182" -->
+  <ScalarVariable
+    name="trainlight.Off.localActive"
+    valueReference="35"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "183" -->
+  <ScalarVariable
+    name="trainlight.Off.newActive"
+    valueReference="36"
+    description="Value of active in the next iteration"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "184" -->
+  <ScalarVariable
+    name="trainlight.Off.oldActive"
+    valueReference="37"
+    description="Value of active when CompositeStep was aborted"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "185" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.enableFire"
+    valueReference="38"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "186" -->
+  <ScalarVariable
+    name="trainlight.On.active"
+    valueReference="39"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "187" -->
+  <ScalarVariable
+    name="trainlight.On.inPort[2].occupied"
+    valueReference="40"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "188" -->
+  <ScalarVariable
+    name="trainlight.On.localActive"
+    valueReference="41"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "189" -->
+  <ScalarVariable
+    name="trainlight.On.newActive"
+    valueReference="42"
+    description="Value of active in the next iteration"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "190" -->
+  <ScalarVariable
+    name="trainlight.On.oldActive"
+    valueReference="43"
+    description="Value of active when CompositeStep was aborted"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "191" -->
+  <ScalarVariable
+    name="trainlight.On.outPort[2].available"
+    valueReference="44"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "192" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.enableFire"
+    valueReference="45"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "193" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.enableFire"
+    valueReference="46"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "194" -->
+  <ScalarVariable
+    name="trainlight.Red.active"
+    valueReference="47"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "195" -->
+  <ScalarVariable
+    name="trainlight.Red.localActive"
+    valueReference="48"
+    description="= true if step is active, otherwise the step is not active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "196" -->
+  <ScalarVariable
+    name="trainlight.Red.newActive"
+    valueReference="49"
+    description="Value of active in the next iteration"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "197" -->
+  <ScalarVariable
+    name="trainlight.Red.oldActive"
+    valueReference="50"
+    description="Value of active when CompositeStep was aborted"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "198" -->
+  <ScalarVariable
+    name="trainlight.Red.outPort[2].available"
+    valueReference="51"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "199" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.enableFire"
+    valueReference="52"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "200" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.condition"
+    valueReference="53"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    initial="exact">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <!-- Index of variable = "201" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.enableFire"
+    valueReference="54"
+    description="= true, if all firing conditions are true"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "202" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.resume"
+    valueReference="55"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "203" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.suspend"
+    valueReference="56"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "204" -->
+  <ScalarVariable
+    name="car.isClumsy"
+    valueReference="57"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "205" -->
+  <ScalarVariable
+    name="car1.isClumsy"
+    valueReference="58"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "206" -->
+  <ScalarVariable
+    name="car2.isClumsy"
+    valueReference="59"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "207" -->
+  <ScalarVariable
+    name="sensors.SensorFail"
+    valueReference="60"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "208" -->
+  <ScalarVariable
+    name="trainlight.Failure"
+    valueReference="61"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "209" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.enableTimer"
+    valueReference="62"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "210" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.enableTimer"
+    valueReference="63"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "211" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.enableTimer"
+    valueReference="64"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "212" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.enableTimer"
+    valueReference="65"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "213" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.enableTimer"
+    valueReference="66"
+    description="= true, if timer is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "214" -->
+  <ScalarVariable
+    name="sensors.Sensor1_Active"
+    valueReference="31"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "215" -->
+  <ScalarVariable
+    name="sensors.Sensor2_Active"
+    valueReference="32"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "216" -->
+  <ScalarVariable
+    name="tic.Safe_Passage"
+    valueReference="53"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "217" -->
+  <ScalarVariable
+    name="trainlight.Off.inPort[1].occupied"
+    valueReference="33"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "218" -->
+  <ScalarVariable
+    name="trainlight.Off.inPort[1].set"
+    valueReference="45"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "219" -->
+  <ScalarVariable
+    name="trainlight.Off.inPort[2].set"
+    valueReference="52"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "220" -->
+  <ScalarVariable
+    name="trainlight.Off.outPort[1].available"
+    valueReference="33"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "221" -->
+  <ScalarVariable
+    name="trainlight.Off.outPort[1].reset"
+    valueReference="38"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "222" -->
+  <ScalarVariable
+    name="trainlight.Off.outerStatePort.localActive"
+    valueReference="33"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "223" -->
+  <ScalarVariable
+    name="trainlight.Off.outerStatePort.subgraphStatePort.resume"
+    valueReference="55"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "224" -->
+  <ScalarVariable
+    name="trainlight.Off.outerStatePort.subgraphStatePort.suspend"
+    valueReference="56"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "225" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.condition"
+    valueReference="78"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "226" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.fire"
+    valueReference="38"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "227" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.inPort.available"
+    valueReference="33"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "228" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.inPort.reset"
+    valueReference="38"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "229" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.localCondition"
+    valueReference="82"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "230" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.outPort.occupied"
+    valueReference="40"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "231" -->
+  <ScalarVariable
+    name="trainlight.OffToOn.outPort.set"
+    valueReference="38"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "232" -->
+  <ScalarVariable
+    name="trainlight.On.inPort[1].occupied"
+    valueReference="39"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "233" -->
+  <ScalarVariable
+    name="trainlight.On.inPort[1].set"
+    valueReference="54"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "234" -->
+  <ScalarVariable
+    name="trainlight.On.inPort[2].set"
+    valueReference="38"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "235" -->
+  <ScalarVariable
+    name="trainlight.On.outPort[1].available"
+    valueReference="39"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "236" -->
+  <ScalarVariable
+    name="trainlight.On.outPort[1].reset"
+    valueReference="46"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "237" -->
+  <ScalarVariable
+    name="trainlight.On.outPort[2].reset"
+    valueReference="45"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "238" -->
+  <ScalarVariable
+    name="trainlight.On.outerStatePort.localActive"
+    valueReference="39"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "239" -->
+  <ScalarVariable
+    name="trainlight.On.outerStatePort.subgraphStatePort.resume"
+    valueReference="55"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "240" -->
+  <ScalarVariable
+    name="trainlight.On.outerStatePort.subgraphStatePort.suspend"
+    valueReference="56"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "241" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.condition"
+    valueReference="61"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "242" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.fire"
+    valueReference="45"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "243" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.inPort.available"
+    valueReference="44"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "244" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.inPort.reset"
+    valueReference="45"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "245" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.localCondition"
+    valueReference="61"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "246" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.outPort.occupied"
+    valueReference="33"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "247" -->
+  <ScalarVariable
+    name="trainlight.OnToOff.outPort.set"
+    valueReference="45"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "248" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.condition"
+    valueReference="101"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "249" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.fire"
+    valueReference="46"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "250" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.inPort.available"
+    valueReference="39"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "251" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.inPort.reset"
+    valueReference="46"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "252" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.localCondition"
+    valueReference="105"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    initial="calculated">
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "253" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.outPort.occupied"
+    valueReference="13"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "254" -->
+  <ScalarVariable
+    name="trainlight.OnToRed.outPort.set"
+    valueReference="46"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "255" -->
+  <ScalarVariable
+    name="trainlight.Red.inPort[1].occupied"
+    valueReference="13"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "256" -->
+  <ScalarVariable
+    name="trainlight.Red.inPort[1].set"
+    valueReference="46"
+    description="true, if transition fires and step is activated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "257" -->
+  <ScalarVariable
+    name="trainlight.Red.outPort[1].available"
+    valueReference="13"
+    description="true, if step is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "258" -->
+  <ScalarVariable
+    name="trainlight.Red.outPort[1].reset"
+    valueReference="54"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "259" -->
+  <ScalarVariable
+    name="trainlight.Red.outPort[2].reset"
+    valueReference="52"
+    description="true, if transition fires and step is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "260" -->
+  <ScalarVariable
+    name="trainlight.Red.outerStatePort.localActive"
+    valueReference="13"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "261" -->
+  <ScalarVariable
+    name="trainlight.Red.outerStatePort.subgraphStatePort.resume"
+    valueReference="55"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "262" -->
+  <ScalarVariable
+    name="trainlight.Red.outerStatePort.subgraphStatePort.suspend"
+    valueReference="56"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "263" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.condition"
+    valueReference="61"
+    description="= true, if transition may fire (time varying expression)"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "264" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.fire"
+    valueReference="52"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "265" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.inPort.available"
+    valueReference="51"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "266" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.inPort.reset"
+    valueReference="52"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "267" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.localCondition"
+    valueReference="61"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "268" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.outPort.occupied"
+    valueReference="34"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "269" -->
+  <ScalarVariable
+    name="trainlight.RedToOff.outPort.set"
+    valueReference="52"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "270" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.fire"
+    valueReference="54"
+    description="= true, if transition fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "271" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.inPort.available"
+    valueReference="13"
+    description="true, if step connected to the transition input is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "272" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.inPort.reset"
+    valueReference="54"
+    description="true, if transition fires and the step connected to the transition input is deactivated"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "273" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.localCondition"
+    valueReference="53"
+    description="= true, if transition may fire"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "274" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.outPort.occupied"
+    valueReference="39"
+    description="true, if step connected to the transition output is active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "275" -->
+  <ScalarVariable
+    name="trainlight.RedToOn.outPort.set"
+    valueReference="54"
+    description="true, if transition fires and step connected to the transition output becomes active"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "276" -->
+  <ScalarVariable
+    name="trainlight.Safe_Passage"
+    valueReference="53"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "277" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.subgraphStatePort.resume"
+    valueReference="55"
+    description="= true, if resume transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "278" -->
+  <ScalarVariable
+    name="trainlight.stateGraphRoot.subgraphStatePort.suspend"
+    valueReference="56"
+    description="= true, if suspend transition of CompositeStep fires"
+    variability="discrete"
+    causality="local"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Derivatives>
+      <Unknown index="15" dependencies="" dependenciesKind="" />
+      <Unknown index="16" dependencies="3" dependenciesKind="dependent" />
+      <Unknown index="17" dependencies="1" dependenciesKind="dependent" />
+      <Unknown index="18" dependencies="" dependenciesKind="" />
+      <Unknown index="19" dependencies="6" dependenciesKind="dependent" />
+      <Unknown index="20" dependencies="4" dependenciesKind="dependent" />
+      <Unknown index="21" dependencies="" dependenciesKind="" />
+      <Unknown index="22" dependencies="9" dependenciesKind="dependent" />
+      <Unknown index="23" dependencies="7" dependenciesKind="dependent" />
+      <Unknown index="24" dependencies="" dependenciesKind="" />
+      <Unknown index="25" dependencies="" dependenciesKind="" />
+      <Unknown index="26" dependencies="" dependenciesKind="" />
+      <Unknown index="27" dependencies="14" dependenciesKind="dependent" />
+      <Unknown index="28" dependencies="" dependenciesKind="" />
+    </Derivatives>
+  </ModelStructure>
+</fmiModelDescription>

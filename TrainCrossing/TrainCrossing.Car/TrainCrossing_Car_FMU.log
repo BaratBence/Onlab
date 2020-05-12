@@ -1,0 +1,6 @@
+mingw32-make: Entering directory 'C:/Users/Bence/AppData/Local/Temp/OPENMO~1/OMEdit/TRAINC~1.CAR'
+rm -f TrainCrossing_Car.fmutmp/sources/TrainCrossing_Car_init.xml
+cp -a "E:/Modelica//share/omc/runtime/c/fmi/buildproject/"* TrainCrossing_Car.fmutmp/sources
+cp -a TrainCrossing_Car_FMU.libs TrainCrossing_Car.fmutmp/sources/
+mingw32-make: Leaving directory 'C:/Users/Bence/AppData/Local/Temp/OPENMO~1/OMEdit/TRAINC~1.CAR'
+RESULT: 0 

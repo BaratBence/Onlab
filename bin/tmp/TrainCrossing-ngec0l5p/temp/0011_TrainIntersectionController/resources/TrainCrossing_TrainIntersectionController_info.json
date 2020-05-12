@@ -1,0 +1,30 @@
+{"format":"Transformational debugger info","version":1,
+"info":{"name":"TrainCrossing.TrainIntersectionController","description":""},
+"variables":{
+"Sensor1Input":{"comment":"","kind":"discrete","type":"Integer","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":230,"lineEnd":230,"colStart":5,"colEnd":34}}},
+"$whenCondition1":{"comment":"Sensor1_Active and not pre(Sensor1_Active)","kind":"discrete","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":234,"lineEnd":234,"colStart":59,"colEnd":94}}},
+"Safe_Passage":{"comment":"","kind":"variable","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":229,"lineEnd":229,"colStart":5,"colEnd":58}}},
+"Sensor1_Active":{"comment":"","kind":"variable","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":227,"lineEnd":227,"colStart":5,"colEnd":59}}},
+"Sensor2_Active":{"comment":"","kind":"variable","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":228,"lineEnd":228,"colStart":5,"colEnd":59}}},
+"Sensor1_Active":{"comment":"","kind":"variable","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":227,"lineEnd":227,"colStart":5,"colEnd":59}}},
+"$outputAlias_Safe_Passage":{"comment":"","kind":"discrete","type":"Boolean","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":229,"lineEnd":229,"colStart":5,"colEnd":58}}}
+},
+"equations":[{"eqIndex":0,"tag":"dummy"},
+{"eqIndex":1,"section":"initial","tag":"assign","defines":["$PRE.Sensor2Output"],"uses":["$START.Sensor2Output"],"equation":["$START.Sensor2Output"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":2,"section":"initial","tag":"assign","defines":["$PRE.Sensor1Input"],"uses":["$START.Sensor1Input"],"equation":["$START.Sensor1Input"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":3,"section":"initial","tag":"assign","defines":["Sensor1Input"],"uses":["$PRE.Sensor1Input"],"equation":["$PRE.Sensor1Input"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":4,"section":"initial","tag":"assign","defines":["Sensor2Output"],"uses":["$PRE.Sensor2Output"],"equation":["$PRE.Sensor2Output"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":5,"tag":"alias","equation":[14],"section":"initial"},
+{"eqIndex":6,"section":"initial","tag":"assign","defines":["$PRE.Sensor1_Active"],"uses":["Sensor1_Active"],"equation":["Sensor1_Active"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":7,"section":"initial","tag":"assign","defines":["$whenCondition1"],"uses":["$PRE.Sensor1_Active","Sensor1_Active"],"equation":["Sensor1_Active and not $PRE.Sensor1_Active"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":234,"lineEnd":234,"colStart":59,"colEnd":94}}},
+{"eqIndex":8,"section":"initial","tag":"assign","defines":["$PRE.Sensor2_Active"],"uses":["Sensor2_Active"],"equation":["Sensor2_Active"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":9,"section":"initial","tag":"assign","defines":["$whenCondition2"],"uses":["$PRE.Sensor2_Active","Sensor2_Active"],"equation":["Sensor2_Active <> $PRE.Sensor2_Active and not Sensor2_Active and $PRE.Sensor2_Active"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":235,"lineEnd":235,"colStart":90,"colEnd":126}}},
+{"eqIndex":10,"section":"regular","tag":"assign","defines":["$whenCondition2"],"uses":[],"equation":["false"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":235,"lineEnd":235,"colStart":90,"colEnd":126}}},
+{"eqIndex":11,"section":"regular","tag":"assign","defines":["$whenCondition1"],"uses":[],"equation":["false"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":234,"lineEnd":234,"colStart":59,"colEnd":94}}},
+{"eqIndex":12,"section":"regular","tag":"when","defines":["Sensor2Output"],"uses":["$whenCondition2","Sensor2Output"],"equation":["1 + pre(Sensor2Output)"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":235,"lineEnd":235,"colStart":90,"colEnd":126}}},
+{"eqIndex":13,"section":"regular","tag":"when","defines":["Sensor1Input"],"uses":["$whenCondition1","Sensor1Input"],"equation":["1 + pre(Sensor1Input)"],"source":{"info":{"file":"E:/Onlab/TrainCrossing/TrainCrossing.mo","lineStart":234,"lineEnd":234,"colStart":59,"colEnd":94}}},
+{"eqIndex":14,"section":"regular","tag":"assign","defines":["Safe_Passage"],"uses":["Sensor2Output","Sensor1Input"],"equation":["Sensor1Input == Sensor2Output"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}}
+],
+"functions":[
+]
+}

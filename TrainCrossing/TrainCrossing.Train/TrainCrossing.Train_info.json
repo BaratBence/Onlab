@@ -1,0 +1,25 @@
+{"format":"Transformational debugger info","version":1,
+"info":{"name":"TrainCrossing.Train","description":""},
+"variables":{
+"distance":{"comment":"","kind":"state","type":"Real","unit":"m","displayUnit":"","source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":54,"lineEnd":54,"colStart":5,"colEnd":30}}},
+"der(distance)":{"comment":"","kind":"derivative","type":"Real","unit":"m.s-1","displayUnit":"","source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":54,"lineEnd":54,"colStart":5,"colEnd":30}}},
+"Train_Distance_output":{"comment":"","kind":"variable","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":47,"lineEnd":47,"colStart":5,"colEnd":64}}},
+"LightColor_input":{"comment":"","kind":"variable","type":"Integer","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":46,"lineEnd":46,"colStart":5,"colEnd":61}}},
+"LightColor_input":{"comment":"","kind":"variable","type":"Integer","unit":"","displayUnit":"","source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":46,"lineEnd":46,"colStart":5,"colEnd":61}}},
+"Length":{"comment":"","kind":"parameter","type":"Real","unit":"m","displayUnit":"","source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":53,"lineEnd":53,"colStart":5,"colEnd":41}}}
+},
+"equations":[{"eqIndex":0,"tag":"dummy"},
+{"eqIndex":1,"tag":"alias","equation":[8],"section":"initial"},
+{"eqIndex":2,"section":"initial","tag":"assign","defines":["distance"],"uses":[],"equation":["0.0"],"source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":57,"lineEnd":57,"colStart":5,"colEnd":19}}},
+{"eqIndex":3,"tag":"alias","equation":[9],"section":"initial"},
+{"eqIndex":4,"tag":"alias","equation":[7],"section":"initial"},
+{"eqIndex":5,"tag":"alias","equation":[6],"section":"initial"},
+{"eqIndex":6,"section":"regular","tag":"assign","defines":["state"],"uses":["LightColor_input"],"equation":["/*TrainCrossing.TrainLightColor*/(LightColor_input)"],"source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":59,"lineEnd":59,"colStart":5,"colEnd":38}}},
+{"eqIndex":7,"section":"regular","tag":"assign","defines":["Train_Length_output"],"uses":["Length"],"equation":["Length"],"source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":61,"lineEnd":61,"colStart":5,"colEnd":33}}},
+{"eqIndex":8,"section":"regular","tag":"assign","defines":["der(distance)"],"uses":["maxSpeed"],"equation":["maxSpeed"],"source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":63,"lineEnd":63,"colStart":5,"colEnd":26}}},
+{"eqIndex":9,"section":"regular","tag":"assign","defines":["Train_Distance_output"],"uses":["distance"],"equation":["distance"],"source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":60,"lineEnd":60,"colStart":5,"colEnd":37}}},
+{"eqIndex":10,"section":"assertions","tag":"algorithm","equation":["assert(state >= TrainCrossing.TrainLightColor.on and state <= TrainCrossing.TrainLightColor.red, \"Variable violating min/max constraint: TrainCrossing.TrainLightColor.on <= state <= TrainCrossing.TrainLightColor.red, has value: \" + String(state, \"d\"));"],"source":{"info":{"file":"E:/Onlab/OnlabModel/TrainCrossing/TrainCrossing.mo","lineStart":49,"lineEnd":49,"colStart":5,"colEnd":26}}}
+],
+"functions":[
+]
+}
